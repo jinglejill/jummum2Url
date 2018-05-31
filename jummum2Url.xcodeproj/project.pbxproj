@@ -17,6 +17,213 @@
 		EFB86C3720C025BF0011AF78 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB86C3620C025BF0011AF78 /* main.m */; };
 		EFB86C4120C025BF0011AF78 /* jummum2UrlTests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB86C4020C025BF0011AF78 /* jummum2UrlTests.m */; };
 		EFB86C4C20C025BF0011AF78 /* jummum2UrlUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = EFB86C4B20C025BF0011AF78 /* jummum2UrlUITests.m */; };
+		EFB86D4E20C025DF0011AF78 /* ResetPasswordTimeOut.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5A20C025DE0011AF78 /* ResetPasswordTimeOut.php */; };
+		EFB86D4F20C025DF0011AF78 /* JMMWriteLog.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5B20C025DE0011AF78 /* JMMWriteLog.php */; };
+		EFB86D5020C025DF0011AF78 /* JMMReceiptGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5C20C025DE0011AF78 /* JMMReceiptGet.php */; };
+		EFB86D5120C025DF0011AF78 /* JMMUserAccountInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5D20C025DE0011AF78 /* JMMUserAccountInsert.php */; };
+		EFB86D5220C025DF0011AF78 /* JMMReceiptSummaryGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5E20C025DE0011AF78 /* JMMReceiptSummaryGetList.php */; };
+		EFB86D5320C025DF0011AF78 /* JMMRewardPointSpentGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C5F20C025DE0011AF78 /* JMMRewardPointSpentGetList.php */; };
+		EFB86D5420C025DF0011AF78 /* aps_development.cer in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6120C025DE0011AF78 /* aps_development.cer */; };
+		EFB86D5520C025DF0011AF78 /* CertificateSigningRequest.certSigningRequest in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6220C025DE0011AF78 /* CertificateSigningRequest.certSigningRequest */; };
+		EFB86D5620C025DF0011AF78 /* ck.pem in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6320C025DE0011AF78 /* ck.pem */; };
+		EFB86D5720C025DF0011AF78 /* Certificates.p12 in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6420C025DE0011AF78 /* Certificates.p12 */; };
+		EFB86D5820C025DF0011AF78 /* PushCert.pem in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6520C025DE0011AF78 /* PushCert.pem */; };
+		EFB86D5920C025DF0011AF78 /* PushKey.pem in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6620C025DE0011AF78 /* PushKey.pem */; };
+		EFB86D5A20C025DF0011AF78 /* JMMRewardPointInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6720C025DE0011AF78 /* JMMRewardPointInsert.php */; };
+		EFB86D5B20C025DF0011AF78 /* JMMPushReminder.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6820C025DE0011AF78 /* JMMPushReminder.php */; };
+		EFB86D5C20C025DF0011AF78 /* JMMLogInUserAccountInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6920C025DE0011AF78 /* JMMLogInUserAccountInsert.php */; };
+		EFB86D5D20C025DF0011AF78 /* urlinsertlistprefix.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6A20C025DE0011AF78 /* urlinsertlistprefix.php */; };
+		EFB86D5E20C025DF0011AF78 /* JMMPrivacyPolicy.html in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6B20C025DE0011AF78 /* JMMPrivacyPolicy.html */; };
+		EFB86D5F20C025DF0011AF78 /* phpunit.xml in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6D20C025DE0011AF78 /* phpunit.xml */; };
+		EFB86D6020C025DF0011AF78 /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6E20C025DE0011AF78 /* LICENSE */; };
+		EFB86D6120C025DF0011AF78 /* CHANGELOG.md in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C6F20C025DE0011AF78 /* CHANGELOG.md */; };
+		EFB86D6220C025DF0011AF78 /* TestConfig.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7220C025DE0011AF78 /* TestConfig.php */; };
+		EFB86D6320C025DF0011AF78 /* RefundTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7320C025DE0011AF78 /* RefundTest.php */; };
+		EFB86D6420C025DF0011AF78 /* LinkTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7420C025DE0011AF78 /* LinkTest.php */; };
+		EFB86D6520C025DF0011AF78 /* OmiseObjectTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7720C025DE0011AF78 /* OmiseObjectTest.php */; };
+		EFB86D6620C025DF0011AF78 /* ForexTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7820C025DE0011AF78 /* ForexTest.php */; };
+		EFB86D6720C025DF0011AF78 /* RecipientTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7920C025DE0011AF78 /* RecipientTest.php */; };
+		EFB86D6820C025DF0011AF78 /* SchedulerTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7A20C025DE0011AF78 /* SchedulerTest.php */; };
+		EFB86D6920C025DF0011AF78 /* ScheduleTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7B20C025DE0011AF78 /* ScheduleTest.php */; };
+		EFB86D6A20C025DF0011AF78 /* TransferTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7C20C025DE0011AF78 /* TransferTest.php */; };
+		EFB86D6B20C025DF0011AF78 /* EventTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7D20C025DE0011AF78 /* EventTest.php */; };
+		EFB86D6C20C025DF0011AF78 /* OccurrenceTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7E20C025DE0011AF78 /* OccurrenceTest.php */; };
+		EFB86D6D20C025DF0011AF78 /* TransactionTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C7F20C025DE0011AF78 /* TransactionTest.php */; };
+		EFB86D6E20C025DF0011AF78 /* SourceTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8020C025DE0011AF78 /* SourceTest.php */; };
+		EFB86D6F20C025DF0011AF78 /* CardTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8120C025DE0011AF78 /* CardTest.php */; };
+		EFB86D7020C025DF0011AF78 /* CustomerTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8220C025DE0011AF78 /* CustomerTest.php */; };
+		EFB86D7120C025DF0011AF78 /* SearchTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8320C025DE0011AF78 /* SearchTest.php */; };
+		EFB86D7220C025DF0011AF78 /* ChargeTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8420C025DE0011AF78 /* ChargeTest.php */; };
+		EFB86D7320C025DF0011AF78 /* DisputeTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8520C025DE0011AF78 /* DisputeTest.php */; };
+		EFB86D7420C025DF0011AF78 /* TokenTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8620C025DE0011AF78 /* TokenTest.php */; };
+		EFB86D7520C025DF0011AF78 /* BalanceTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8720C025DE0011AF78 /* BalanceTest.php */; };
+		EFB86D7620C025DF0011AF78 /* OmiseExceptionTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8920C025DE0011AF78 /* OmiseExceptionTest.php */; };
+		EFB86D7720C025DF0011AF78 /* ClassExistsTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8A20C025DE0011AF78 /* ClassExistsTest.php */; };
+		EFB86D7820C025DF0011AF78 /* AccountTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8B20C025DE0011AF78 /* AccountTest.php */; };
+		EFB86D7920C025DF0011AF78 /* tokens-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C8E20C025DE0011AF78 /* tokens-post.json */; };
+		EFB86D7A20C025DF0011AF78 /* tokn_test_4zmrjhuk2rndz24a6x0-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9020C025DE0011AF78 /* tokn_test_4zmrjhuk2rndz24a6x0-get.json */; };
+		EFB86D7B20C025DF0011AF78 /* cards-bGltaXQ9MQ-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9420C025DE0011AF78 /* cards-bGltaXQ9MQ-get.json */; };
+		EFB86D7C20C025DF0011AF78 /* schedules-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9520C025DE0011AF78 /* schedules-get.json */; };
+		EFB86D7D20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9820C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-get.json */; };
+		EFB86D7E20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-delete.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9920C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-delete.json */; };
+		EFB86D7F20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9A20C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-patch.json */; };
+		EFB86D8020C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9B20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-get.json */; };
+		EFB86D8120C025DF0011AF78 /* cust_test_5234fzk37pi2mz0cen3-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9C20C025DE0011AF78 /* cust_test_5234fzk37pi2mz0cen3-get.json */; };
+		EFB86D8220C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-delete.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9D20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-delete.json */; };
+		EFB86D8320C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9E20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-patch.json */; };
+		EFB86D8420C025DF0011AF78 /* recipients-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86C9F20C025DE0011AF78 /* recipients-post.json */; };
+		EFB86D8520C025DF0011AF78 /* occu_test_58dt3strf4m1y7bqii8-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA120C025DE0011AF78 /* occu_test_58dt3strf4m1y7bqii8-get.json */; };
+		EFB86D8620C025DF0011AF78 /* charges-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA220C025DE0011AF78 /* charges-post.json */; };
+		EFB86D8720C025DF0011AF78 /* transfers-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA320C025DE0011AF78 /* transfers-get.json */; };
+		EFB86D8820C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdl-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA420C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdl-get.json */; };
+		EFB86D8920C025DF0011AF78 /* customers-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA520C025DE0011AF78 /* customers-post.json */; };
+		EFB86D8A20C025DF0011AF78 /* recipients-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA620C025DE0011AF78 /* recipients-get.json */; };
+		EFB86D8B20C025DF0011AF78 /* transactions-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA720C025DE0011AF78 /* transactions-get.json */; };
+		EFB86D8C20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA820C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json */; };
+		EFB86D8D20C025DF0011AF78 /* events-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CA920C025DE0011AF78 /* events-get.json */; };
+		EFB86D8E20C025DF0011AF78 /* account-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CAA20C025DE0011AF78 /* account-get.json */; };
+		EFB86D8F20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CAB20C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */; };
+		EFB86D9020C025DF0011AF78 /* schedules-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CAD20C025DE0011AF78 /* schedules-get.json */; };
+		EFB86D9120C025DF0011AF78 /* refunds-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CAF20C025DE0011AF78 /* refunds-post.json */; };
+		EFB86D9220C025DF0011AF78 /* refunds-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB020C025DE0011AF78 /* refunds-get.json */; };
+		EFB86D9320C025DF0011AF78 /* rfnd_test_4zmrjhlbqy587sw6fwt-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB220C025DE0011AF78 /* rfnd_test_4zmrjhlbqy587sw6fwt-get.json */; };
+		EFB86D9420C025DF0011AF78 /* capture-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB320C025DE0011AF78 /* capture-post.json */; };
+		EFB86D9520C025DF0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB420C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-get.json */; };
+		EFB86D9620C025DF0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB520C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-patch.json */; };
+		EFB86D9720C025DF0011AF78 /* chrg_test_53z5zoeovi39e1erbj0-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB620C025DE0011AF78 /* chrg_test_53z5zoeovi39e1erbj0-get.json */; };
+		EFB86D9820C025DF0011AF78 /* reverse-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB820C025DE0011AF78 /* reverse-post.json */; };
+		EFB86D9920C025DF0011AF78 /* search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CB920C025DE0011AF78 /* search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json */; };
+		EFB86D9A20C025DF0011AF78 /* open-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CBB20C025DE0011AF78 /* open-get.json */; };
+		EFB86D9B20C025DF0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CBC20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-patch.json */; };
+		EFB86D9C20C025DF0011AF78 /* pending-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CBD20C025DE0011AF78 /* pending-get.json */; };
+		EFB86D9D20C025DF0011AF78 /* closed-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CBE20C025DE0011AF78 /* closed-get.json */; };
+		EFB86D9E20C025DF0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CBF20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-get.json */; };
+		EFB86D9F20C025DF0011AF78 /* usd-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC120C025DE0011AF78 /* usd-get.json */; };
+		EFB86DA020C025DF0011AF78 /* charges-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC220C025DE0011AF78 /* charges-get.json */; };
+		EFB86DA120C025DF0011AF78 /* schd_test_585t7iomh2dte3ejxh5-delete.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC420C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-delete.json */; };
+		EFB86DA220C025DF0011AF78 /* schd_test_585t7iomh2dte3ejxh5-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC520C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-get.json */; };
+		EFB86DA320C025DF0011AF78 /* occurrences-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC720C025DE0011AF78 /* occurrences-get.json */; };
+		EFB86DA420C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CC920C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-get.json */; };
+		EFB86DA520C025DF0011AF78 /* schedules-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CCA20C025DE0011AF78 /* schedules-get.json */; };
+		EFB86DA620C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CCB20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-patch.json */; };
+		EFB86DA720C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-delete.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CCC20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-delete.json */; };
+		EFB86DA820C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CCE20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-get.json */; };
+		EFB86DA920C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-patch.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CCF20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-patch.json */; };
+		EFB86DAA20C025DF0011AF78 /* schedules-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD120C025DE0011AF78 /* schedules-get.json */; };
+		EFB86DAB20C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-delete.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD220C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-delete.json */; };
+		EFB86DAC20C025DF0011AF78 /* schedules-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD320C025DE0011AF78 /* schedules-get.json */; };
+		EFB86DAD20C025DF0011AF78 /* balance-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD420C025DE0011AF78 /* balance-get.json */; };
+		EFB86DAE20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD520C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json */; };
+		EFB86DAF20C025DF0011AF78 /* search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD620C025DE0011AF78 /* search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json */; };
+		EFB86DB020C025DF0011AF78 /* search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD720C025DE0011AF78 /* search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json */; };
+		EFB86DB120C025DF0011AF78 /* trxn_test_4zmrjhlflnz6id6q0bo-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CD920C025DF0011AF78 /* trxn_test_4zmrjhlflnz6id6q0bo-get.json */; };
+		EFB86DB220C025DF0011AF78 /* search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CDA20C025DF0011AF78 /* search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json */; };
+		EFB86DB320C025DF0011AF78 /* sources-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CDB20C025DF0011AF78 /* sources-post.json */; };
+		EFB86DB420C025DF0011AF78 /* link_test_56bsanpa365jnlbc7rt-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CDD20C025DF0011AF78 /* link_test_56bsanpa365jnlbc7rt-get.json */; };
+		EFB86DB520C025DF0011AF78 /* customers-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CDE20C025DF0011AF78 /* customers-get.json */; };
+		EFB86DB620C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CDF20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */; };
+		EFB86DB720C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE020C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */; };
+		EFB86DB820C025DF0011AF78 /* disputes-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE120C025DF0011AF78 /* disputes-get.json */; };
+		EFB86DB920C025DF0011AF78 /* evnt_test_531zv1nto0a5pimuiza-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE320C025DF0011AF78 /* evnt_test_531zv1nto0a5pimuiza-get.json */; };
+		EFB86DBA20C025DF0011AF78 /* transfers-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE420C025DF0011AF78 /* transfers-post.json */; };
+		EFB86DBB20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE520C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */; };
+		EFB86DBC20C025DF0011AF78 /* schedules-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE620C025DF0011AF78 /* schedules-post.json */; };
+		EFB86DBD20C025DF0011AF78 /* links-post.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE720C025DF0011AF78 /* links-post.json */; };
+		EFB86DBE20C025DF0011AF78 /* search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE820C025DF0011AF78 /* search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json */; };
+		EFB86DBF20C025DF0011AF78 /* search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CE920C025DF0011AF78 /* search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json */; };
+		EFB86DC020C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CEA20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json */; };
+		EFB86DC120C025DF0011AF78 /* links-get.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CEB20C025DF0011AF78 /* links-get.json */; };
+		EFB86DC220C025DF0011AF78 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CEC20C025DF0011AF78 /* README.md */; };
+		EFB86DC320C025DF0011AF78 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CED20C025DF0011AF78 /* .gitignore */; };
+		EFB86DC420C025DF0011AF78 /* circle.yml in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CEE20C025DF0011AF78 /* circle.yml */; };
+		EFB86DC520C025DF0011AF78 /* OmiseForex.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF120C025DF0011AF78 /* OmiseForex.php */; };
+		EFB86DC620C025DF0011AF78 /* OmiseSource.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF220C025DF0011AF78 /* OmiseSource.php */; };
+		EFB86DC720C025DF0011AF78 /* OmiseTest.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF320C025DF0011AF78 /* OmiseTest.php */; };
+		EFB86DC820C025DF0011AF78 /* OmiseApiResource.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF520C025DF0011AF78 /* OmiseApiResource.php */; };
+		EFB86DC920C025DF0011AF78 /* OmiseObject.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF720C025DF0011AF78 /* OmiseObject.php */; };
+		EFB86DCA20C025DF0011AF78 /* OmiseVaultResource.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF820C025DF0011AF78 /* OmiseVaultResource.php */; };
+		EFB86DCB20C025DF0011AF78 /* OmiseRefundList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CF920C025DF0011AF78 /* OmiseRefundList.php */; };
+		EFB86DCC20C025DF0011AF78 /* OmiseTransaction.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFA20C025DF0011AF78 /* OmiseTransaction.php */; };
+		EFB86DCD20C025DF0011AF78 /* OmiseOccurrence.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFB20C025DF0011AF78 /* OmiseOccurrence.php */; };
+		EFB86DCE20C025DF0011AF78 /* OmiseCustomer.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFC20C025DF0011AF78 /* OmiseCustomer.php */; };
+		EFB86DCF20C025DF0011AF78 /* OmiseBalance.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFD20C025DF0011AF78 /* OmiseBalance.php */; };
+		EFB86DD020C025DF0011AF78 /* OmiseScheduleList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFE20C025DF0011AF78 /* OmiseScheduleList.php */; };
+		EFB86DD120C025DF0011AF78 /* OmiseSchedule.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86CFF20C025DF0011AF78 /* OmiseSchedule.php */; };
+		EFB86DD220C025DF0011AF78 /* OmiseRecipient.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0020C025DF0011AF78 /* OmiseRecipient.php */; };
+		EFB86DD320C025DF0011AF78 /* OmiseToken.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0120C025DF0011AF78 /* OmiseToken.php */; };
+		EFB86DD420C025DF0011AF78 /* OmiseOccurrenceList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0220C025DF0011AF78 /* OmiseOccurrenceList.php */; };
+		EFB86DD520C025DF0011AF78 /* OmiseCard.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0320C025DF0011AF78 /* OmiseCard.php */; };
+		EFB86DD620C025DF0011AF78 /* OmiseSearch.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0420C025DF0011AF78 /* OmiseSearch.php */; };
+		EFB86DD720C025DF0011AF78 /* OmiseAccount.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0520C025DF0011AF78 /* OmiseAccount.php */; };
+		EFB86DD820C025DF0011AF78 /* OmiseCardList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0620C025DF0011AF78 /* OmiseCardList.php */; };
+		EFB86DD920C025DF0011AF78 /* OmiseDispute.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0720C025DF0011AF78 /* OmiseDispute.php */; };
+		EFB86DDA20C025DF0011AF78 /* OmiseTransfer.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0820C025DF0011AF78 /* OmiseTransfer.php */; };
+		EFB86DDB20C025DF0011AF78 /* OmiseLink.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0920C025DF0011AF78 /* OmiseLink.php */; };
+		EFB86DDC20C025DF0011AF78 /* OmiseEvent.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0A20C025DF0011AF78 /* OmiseEvent.php */; };
+		EFB86DDD20C025DF0011AF78 /* OmiseRefund.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0B20C025DF0011AF78 /* OmiseRefund.php */; };
+		EFB86DDE20C025DF0011AF78 /* OmiseScheduler.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0C20C025DF0011AF78 /* OmiseScheduler.php */; };
+		EFB86DDF20C025DF0011AF78 /* OmiseCharge.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0D20C025DF0011AF78 /* OmiseCharge.php */; };
+		EFB86DE020C025DF0011AF78 /* OmiseExceptions.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D0F20C025DF0011AF78 /* OmiseExceptions.php */; };
+		EFB86DE120C025DF0011AF78 /* Omise.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1020C025DF0011AF78 /* Omise.php */; };
+		EFB86DE220C025DF0011AF78 /* ca_certificates.pem in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1220C025DF0011AF78 /* ca_certificates.pem */; };
+		EFB86DE320C025DF0011AF78 /* composer.json in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1320C025DF0011AF78 /* composer.json */; };
+		EFB86DE420C025DF0011AF78 /* JMMRewardPointSpentUsedGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1420C025DF0011AF78 /* JMMRewardPointSpentUsedGetList.php */; };
+		EFB86DE520C025DF0011AF78 /* JMMPushSyncSync.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1520C025DF0011AF78 /* JMMPushSyncSync.php */; };
+		EFB86DE620C025DF0011AF78 /* JMMHotDealGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1620C025DF0011AF78 /* JMMHotDealGetList.php */; };
+		EFB86DE720C025DF0011AF78 /* testpush.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1720C025DF0011AF78 /* testpush.php */; };
+		EFB86DE820C025DF0011AF78 /* JMMUserAccountValidate.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1820C025DF0011AF78 /* JMMUserAccountValidate.php */; };
+		EFB86DE920C025DF0011AF78 /* JMMMasterGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1920C025DF0011AF78 /* JMMMasterGet.php */; };
+		EFB86DEA20C025DF0011AF78 /* JMMDisputeGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1A20C025DF0011AF78 /* JMMDisputeGetList.php */; };
+		EFB86DEB20C025DF0011AF78 /* noodle dry original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1C20C025DF0011AF78 /* noodle dry original.jpg */; };
+		EFB86DEC20C025DF0011AF78 /* fried squid.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1D20C025DF0011AF78 /* fried squid.jpg */; };
+		EFB86DED20C025DF0011AF78 /* tubtim.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1E20C025DF0011AF78 /* tubtim.jpg */; };
+		EFB86DEE20C025DF0011AF78 /* sticky rice dessert.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D1F20C025DF0011AF78 /* sticky rice dessert.jpg */; };
+		EFB86DEF20C025DF0011AF78 /* tofu.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2020C025DF0011AF78 /* tofu.jpg */; };
+		EFB86DF020C025DF0011AF78 /* violet drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2120C025DF0011AF78 /* violet drink.jpg */; };
+		EFB86DF120C025DF0011AF78 /* sushiShin.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2220C025DF0011AF78 /* sushiShin.jpg */; };
+		EFB86DF220C025DF0011AF78 /* noodle red soup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2320C025DF0011AF78 /* noodle red soup.jpg */; };
+		EFB86DF320C025DF0011AF78 /* wonderful soup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2420C025DF0011AF78 /* wonderful soup.jpg */; };
+		EFB86DF420C025DF0011AF78 /* fried shrimp.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2520C025DF0011AF78 /* fried shrimp.jpg */; };
+		EFB86DF520C025DF0011AF78 /* mamarin_logo.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2620C025DF0011AF78 /* mamarin_logo.jpg */; };
+		EFB86DF620C025DF0011AF78 /* yellow drink.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2720C025DF0011AF78 /* yellow drink.jpg */; };
+		EFB86DF720C025DF0011AF78 /* noodle soup original.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2820C025DF0011AF78 /* noodle soup original.jpg */; };
+		EFB86DF820C025DF0011AF78 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2920C025DF0011AF78 /* logo.png */; };
+		EFB86DF920C025DF0011AF78 /* promoBanner.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2A20C025DF0011AF78 /* promoBanner.jpg */; };
+		EFB86DFA20C025DF0011AF78 /* ข้าวแห้งปลาอินทรีย์.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2B20C025DF0011AF78 /* ข้าวแห้งปลาอินทรีย์.jpg */; };
+		EFB86DFB20C025DF0011AF78 /* noodle dry red.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2C20C025DF0011AF78 /* noodle dry red.jpg */; };
+		EFB86DFC20C025DF0011AF78 /* MMR1.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2D20C025DF0011AF78 /* MMR1.jpg */; };
+		EFB86DFD20C025DF0011AF78 /* NoImage.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2E20C025DF0011AF78 /* NoImage.jpg */; };
+		EFB86DFE20C025DF0011AF78 /* clear soup.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D2F20C025DF0011AF78 /* clear soup.jpg */; };
+		EFB86DFF20C025DF0011AF78 /* red rice.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3020C025DF0011AF78 /* red rice.jpg */; };
+		EFB86E0020C025DF0011AF78 /* promoThumbNail.jpg in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3120C025DF0011AF78 /* promoThumbNail.jpg */; };
+		EFB86E0120C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3220C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php */; };
+		EFB86E0220C025DF0011AF78 /* downloadImage.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3320C025DF0011AF78 /* downloadImage.php */; };
+		EFB86E0320C025DF0011AF78 /* dbConnect.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3420C025DF0011AF78 /* dbConnect.php */; };
+		EFB86E0420C025DF0011AF78 /* test.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3520C025DF0011AF78 /* test.php */; };
+		EFB86E0520C025DF0011AF78 /* JMMRewardPointSpentUsedMoreGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3620C025DF0011AF78 /* JMMRewardPointSpentUsedMoreGetList.php */; };
+		EFB86E0620C025DF0011AF78 /* emailTemplateForgotPassword.html in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3720C025DF0011AF78 /* emailTemplateForgotPassword.html */; };
+		EFB86E0720C025DF0011AF78 /* JMMReceiptUpdate.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3820C025DF0011AF78 /* JMMReceiptUpdate.php */; };
+		EFB86E0820C025DF0011AF78 /* JMMReceiptWithModifiedDateGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3920C025DF0011AF78 /* JMMReceiptWithModifiedDateGet.php */; };
+		EFB86E0920C025DF0011AF78 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3A20C025DF0011AF78 /* .gitignore */; };
+		EFB86E0A20C025DF0011AF78 /* JMMPromotionGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3B20C025DF0011AF78 /* JMMPromotionGetList.php */; };
+		EFB86E0B20C025DF0011AF78 /* JMMDisputeInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3C20C025DF0011AF78 /* JMMDisputeInsert.php */; };
+		EFB86E0C20C025DF0011AF78 /* JMMUserAccountForgotPasswordInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3D20C025DF0011AF78 /* JMMUserAccountForgotPasswordInsert.php */; };
+		EFB86E0D20C025DF0011AF78 /* ResetPassword.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3E20C025DF0011AF78 /* ResetPassword.php */; };
+		EFB86E0E20C025DF0011AF78 /* JMMRewardPointGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D3F20C025DF0011AF78 /* JMMRewardPointGet.php */; };
+		EFB86E0F20C025DF0011AF78 /* OmiseCheckOut.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4020C025DF0011AF78 /* OmiseCheckOut.php */; };
+		EFB86E1020C025DF0011AF78 /* testMeta.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4120C025DF0011AF78 /* testMeta.php */; };
+		EFB86E1120C025DF0011AF78 /* urlinsertprefix.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4220C025DF0011AF78 /* urlinsertprefix.php */; };
+		EFB86E1220C025DF0011AF78 /* JMMPromoCodeInsert.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4320C025DF0011AF78 /* JMMPromoCodeInsert.php */; };
+		EFB86E1320C025DF0011AF78 /* JMMTermsOfService.html in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4420C025DF0011AF78 /* JMMTermsOfService.html */; };
+		EFB86E1420C025DF0011AF78 /* JMMReceiptMaxModifiedDateGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4520C025DF0011AF78 /* JMMReceiptMaxModifiedDateGetList.php */; };
+		EFB86E1520C025DF0011AF78 /* JMMMenuGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4620C025DF0011AF78 /* JMMMenuGetList.php */; };
+		EFB86E1620C025DF0011AF78 /* JMMCustomerTableGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4720C025DF0011AF78 /* JMMCustomerTableGetList.php */; };
+		EFB86E1720C025DF0011AF78 /* JMMRewardPointSpentMoreGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4820C025DF0011AF78 /* JMMRewardPointSpentMoreGetList.php */; };
+		EFB86E1820C025DF0011AF78 /* JMMUserAccountGet.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4920C025DF0011AF78 /* JMMUserAccountGet.php */; };
+		EFB86E1920C025DF0011AF78 /* modelm.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4A20C025DF0011AF78 /* modelm.php */; };
+		EFB86E1A20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4B20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php */; };
+		EFB86E1B20C025DF0011AF78 /* modelh.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4C20C025DF0011AF78 /* modelh.php */; };
+		EFB86E1C20C025DF0011AF78 /* JMMDisputeReasonGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4D20C025DF0011AF78 /* JMMDisputeReasonGetList.php */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +264,213 @@
 		EFB86C4720C025BF0011AF78 /* jummum2UrlUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = jummum2UrlUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		EFB86C4B20C025BF0011AF78 /* jummum2UrlUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = jummum2UrlUITests.m; sourceTree = "<group>"; };
 		EFB86C4D20C025BF0011AF78 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EFB86C5A20C025DE0011AF78 /* ResetPasswordTimeOut.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ResetPasswordTimeOut.php; sourceTree = "<group>"; };
+		EFB86C5B20C025DE0011AF78 /* JMMWriteLog.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMWriteLog.php; sourceTree = "<group>"; };
+		EFB86C5C20C025DE0011AF78 /* JMMReceiptGet.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMReceiptGet.php; sourceTree = "<group>"; };
+		EFB86C5D20C025DE0011AF78 /* JMMUserAccountInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMUserAccountInsert.php; sourceTree = "<group>"; };
+		EFB86C5E20C025DE0011AF78 /* JMMReceiptSummaryGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMReceiptSummaryGetList.php; sourceTree = "<group>"; };
+		EFB86C5F20C025DE0011AF78 /* JMMRewardPointSpentGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointSpentGetList.php; sourceTree = "<group>"; };
+		EFB86C6120C025DE0011AF78 /* aps_development.cer */ = {isa = PBXFileReference; lastKnownFileType = file; path = aps_development.cer; sourceTree = "<group>"; };
+		EFB86C6220C025DE0011AF78 /* CertificateSigningRequest.certSigningRequest */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CertificateSigningRequest.certSigningRequest; sourceTree = "<group>"; };
+		EFB86C6320C025DE0011AF78 /* ck.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ck.pem; sourceTree = "<group>"; };
+		EFB86C6420C025DE0011AF78 /* Certificates.p12 */ = {isa = PBXFileReference; lastKnownFileType = file; path = Certificates.p12; sourceTree = "<group>"; };
+		EFB86C6520C025DE0011AF78 /* PushCert.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushCert.pem; sourceTree = "<group>"; };
+		EFB86C6620C025DE0011AF78 /* PushKey.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = PushKey.pem; sourceTree = "<group>"; };
+		EFB86C6720C025DE0011AF78 /* JMMRewardPointInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointInsert.php; sourceTree = "<group>"; };
+		EFB86C6820C025DE0011AF78 /* JMMPushReminder.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPushReminder.php; sourceTree = "<group>"; };
+		EFB86C6920C025DE0011AF78 /* JMMLogInUserAccountInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMLogInUserAccountInsert.php; sourceTree = "<group>"; };
+		EFB86C6A20C025DE0011AF78 /* urlinsertlistprefix.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = urlinsertlistprefix.php; sourceTree = "<group>"; };
+		EFB86C6B20C025DE0011AF78 /* JMMPrivacyPolicy.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JMMPrivacyPolicy.html; sourceTree = "<group>"; };
+		EFB86C6D20C025DE0011AF78 /* phpunit.xml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; path = phpunit.xml; sourceTree = "<group>"; };
+		EFB86C6E20C025DE0011AF78 /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		EFB86C6F20C025DE0011AF78 /* CHANGELOG.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = CHANGELOG.md; sourceTree = "<group>"; };
+		EFB86C7220C025DE0011AF78 /* TestConfig.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = TestConfig.php; sourceTree = "<group>"; };
+		EFB86C7320C025DE0011AF78 /* RefundTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = RefundTest.php; sourceTree = "<group>"; };
+		EFB86C7420C025DE0011AF78 /* LinkTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = LinkTest.php; sourceTree = "<group>"; };
+		EFB86C7720C025DE0011AF78 /* OmiseObjectTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseObjectTest.php; sourceTree = "<group>"; };
+		EFB86C7820C025DE0011AF78 /* ForexTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ForexTest.php; sourceTree = "<group>"; };
+		EFB86C7920C025DE0011AF78 /* RecipientTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = RecipientTest.php; sourceTree = "<group>"; };
+		EFB86C7A20C025DE0011AF78 /* SchedulerTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = SchedulerTest.php; sourceTree = "<group>"; };
+		EFB86C7B20C025DE0011AF78 /* ScheduleTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ScheduleTest.php; sourceTree = "<group>"; };
+		EFB86C7C20C025DE0011AF78 /* TransferTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = TransferTest.php; sourceTree = "<group>"; };
+		EFB86C7D20C025DE0011AF78 /* EventTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = EventTest.php; sourceTree = "<group>"; };
+		EFB86C7E20C025DE0011AF78 /* OccurrenceTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OccurrenceTest.php; sourceTree = "<group>"; };
+		EFB86C7F20C025DE0011AF78 /* TransactionTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = TransactionTest.php; sourceTree = "<group>"; };
+		EFB86C8020C025DE0011AF78 /* SourceTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = SourceTest.php; sourceTree = "<group>"; };
+		EFB86C8120C025DE0011AF78 /* CardTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = CardTest.php; sourceTree = "<group>"; };
+		EFB86C8220C025DE0011AF78 /* CustomerTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = CustomerTest.php; sourceTree = "<group>"; };
+		EFB86C8320C025DE0011AF78 /* SearchTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = SearchTest.php; sourceTree = "<group>"; };
+		EFB86C8420C025DE0011AF78 /* ChargeTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ChargeTest.php; sourceTree = "<group>"; };
+		EFB86C8520C025DE0011AF78 /* DisputeTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = DisputeTest.php; sourceTree = "<group>"; };
+		EFB86C8620C025DE0011AF78 /* TokenTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = TokenTest.php; sourceTree = "<group>"; };
+		EFB86C8720C025DE0011AF78 /* BalanceTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = BalanceTest.php; sourceTree = "<group>"; };
+		EFB86C8920C025DE0011AF78 /* OmiseExceptionTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseExceptionTest.php; sourceTree = "<group>"; };
+		EFB86C8A20C025DE0011AF78 /* ClassExistsTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ClassExistsTest.php; sourceTree = "<group>"; };
+		EFB86C8B20C025DE0011AF78 /* AccountTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = AccountTest.php; sourceTree = "<group>"; };
+		EFB86C8E20C025DE0011AF78 /* tokens-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tokens-post.json"; sourceTree = "<group>"; };
+		EFB86C9020C025DE0011AF78 /* tokn_test_4zmrjhuk2rndz24a6x0-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "tokn_test_4zmrjhuk2rndz24a6x0-get.json"; sourceTree = "<group>"; };
+		EFB86C9420C025DE0011AF78 /* cards-bGltaXQ9MQ-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cards-bGltaXQ9MQ-get.json"; sourceTree = "<group>"; };
+		EFB86C9520C025DE0011AF78 /* schedules-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-get.json"; sourceTree = "<group>"; };
+		EFB86C9820C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "card_test_4zmrjfzf0spz3mh63cs-get.json"; sourceTree = "<group>"; };
+		EFB86C9920C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-delete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "card_test_4zmrjfzf0spz3mh63cs-delete.json"; sourceTree = "<group>"; };
+		EFB86C9A20C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "card_test_4zmrjfzf0spz3mh63cs-patch.json"; sourceTree = "<group>"; };
+		EFB86C9B20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cust_test_4zmrjg2hct06ybwobqc-get.json"; sourceTree = "<group>"; };
+		EFB86C9C20C025DE0011AF78 /* cust_test_5234fzk37pi2mz0cen3-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cust_test_5234fzk37pi2mz0cen3-get.json"; sourceTree = "<group>"; };
+		EFB86C9D20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-delete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cust_test_4zmrjg2hct06ybwobqc-delete.json"; sourceTree = "<group>"; };
+		EFB86C9E20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "cust_test_4zmrjg2hct06ybwobqc-patch.json"; sourceTree = "<group>"; };
+		EFB86C9F20C025DE0011AF78 /* recipients-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recipients-post.json"; sourceTree = "<group>"; };
+		EFB86CA120C025DE0011AF78 /* occu_test_58dt3strf4m1y7bqii8-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "occu_test_58dt3strf4m1y7bqii8-get.json"; sourceTree = "<group>"; };
+		EFB86CA220C025DE0011AF78 /* charges-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "charges-post.json"; sourceTree = "<group>"; };
+		EFB86CA320C025DE0011AF78 /* transfers-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "transfers-get.json"; sourceTree = "<group>"; };
+		EFB86CA420C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdl-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdl-get.json"; sourceTree = "<group>"; };
+		EFB86CA520C025DE0011AF78 /* customers-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "customers-post.json"; sourceTree = "<group>"; };
+		EFB86CA620C025DE0011AF78 /* recipients-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recipients-get.json"; sourceTree = "<group>"; };
+		EFB86CA720C025DE0011AF78 /* transactions-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "transactions-get.json"; sourceTree = "<group>"; };
+		EFB86CA820C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json"; sourceTree = "<group>"; };
+		EFB86CA920C025DE0011AF78 /* events-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "events-get.json"; sourceTree = "<group>"; };
+		EFB86CAA20C025DE0011AF78 /* account-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "account-get.json"; sourceTree = "<group>"; };
+		EFB86CAB20C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json"; sourceTree = "<group>"; };
+		EFB86CAD20C025DE0011AF78 /* schedules-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-get.json"; sourceTree = "<group>"; };
+		EFB86CAF20C025DE0011AF78 /* refunds-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "refunds-post.json"; sourceTree = "<group>"; };
+		EFB86CB020C025DE0011AF78 /* refunds-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "refunds-get.json"; sourceTree = "<group>"; };
+		EFB86CB220C025DE0011AF78 /* rfnd_test_4zmrjhlbqy587sw6fwt-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "rfnd_test_4zmrjhlbqy587sw6fwt-get.json"; sourceTree = "<group>"; };
+		EFB86CB320C025DE0011AF78 /* capture-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "capture-post.json"; sourceTree = "<group>"; };
+		EFB86CB420C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "chrg_test_4zmrjgxdh4ycj2qncoj-get.json"; sourceTree = "<group>"; };
+		EFB86CB520C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "chrg_test_4zmrjgxdh4ycj2qncoj-patch.json"; sourceTree = "<group>"; };
+		EFB86CB620C025DE0011AF78 /* chrg_test_53z5zoeovi39e1erbj0-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "chrg_test_53z5zoeovi39e1erbj0-get.json"; sourceTree = "<group>"; };
+		EFB86CB820C025DE0011AF78 /* reverse-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "reverse-post.json"; sourceTree = "<group>"; };
+		EFB86CB920C025DE0011AF78 /* search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json"; sourceTree = "<group>"; };
+		EFB86CBB20C025DE0011AF78 /* open-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "open-get.json"; sourceTree = "<group>"; };
+		EFB86CBC20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dspt_test_4zgf15h89w8t775kcm8-patch.json"; sourceTree = "<group>"; };
+		EFB86CBD20C025DE0011AF78 /* pending-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "pending-get.json"; sourceTree = "<group>"; };
+		EFB86CBE20C025DE0011AF78 /* closed-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "closed-get.json"; sourceTree = "<group>"; };
+		EFB86CBF20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "dspt_test_4zgf15h89w8t775kcm8-get.json"; sourceTree = "<group>"; };
+		EFB86CC120C025DE0011AF78 /* usd-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "usd-get.json"; sourceTree = "<group>"; };
+		EFB86CC220C025DE0011AF78 /* charges-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "charges-get.json"; sourceTree = "<group>"; };
+		EFB86CC420C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-delete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schd_test_585t7iomh2dte3ejxh5-delete.json"; sourceTree = "<group>"; };
+		EFB86CC520C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schd_test_585t7iomh2dte3ejxh5-get.json"; sourceTree = "<group>"; };
+		EFB86CC720C025DE0011AF78 /* occurrences-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "occurrences-get.json"; sourceTree = "<group>"; };
+		EFB86CC920C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "trsf_test_4zmrjicrvw7j6uhv1l4-get.json"; sourceTree = "<group>"; };
+		EFB86CCA20C025DE0011AF78 /* schedules-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-get.json"; sourceTree = "<group>"; };
+		EFB86CCB20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "trsf_test_4zmrjicrvw7j6uhv1l4-patch.json"; sourceTree = "<group>"; };
+		EFB86CCC20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-delete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "trsf_test_4zmrjicrvw7j6uhv1l4-delete.json"; sourceTree = "<group>"; };
+		EFB86CCE20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recp_test_508a9dytz793gxv9m77-get.json"; sourceTree = "<group>"; };
+		EFB86CCF20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-patch.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recp_test_508a9dytz793gxv9m77-patch.json"; sourceTree = "<group>"; };
+		EFB86CD120C025DE0011AF78 /* schedules-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-get.json"; sourceTree = "<group>"; };
+		EFB86CD220C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-delete.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "recp_test_508a9dytz793gxv9m77-delete.json"; sourceTree = "<group>"; };
+		EFB86CD320C025DE0011AF78 /* schedules-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-get.json"; sourceTree = "<group>"; };
+		EFB86CD420C025DE0011AF78 /* balance-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "balance-get.json"; sourceTree = "<group>"; };
+		EFB86CD520C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json"; sourceTree = "<group>"; };
+		EFB86CD620C025DE0011AF78 /* search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json"; sourceTree = "<group>"; };
+		EFB86CD720C025DE0011AF78 /* search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json"; sourceTree = "<group>"; };
+		EFB86CD920C025DF0011AF78 /* trxn_test_4zmrjhlflnz6id6q0bo-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "trxn_test_4zmrjhlflnz6id6q0bo-get.json"; sourceTree = "<group>"; };
+		EFB86CDA20C025DF0011AF78 /* search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json"; sourceTree = "<group>"; };
+		EFB86CDB20C025DF0011AF78 /* sources-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "sources-post.json"; sourceTree = "<group>"; };
+		EFB86CDD20C025DF0011AF78 /* link_test_56bsanpa365jnlbc7rt-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "link_test_56bsanpa365jnlbc7rt-get.json"; sourceTree = "<group>"; };
+		EFB86CDE20C025DF0011AF78 /* customers-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "customers-get.json"; sourceTree = "<group>"; };
+		EFB86CDF20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json"; sourceTree = "<group>"; };
+		EFB86CE020C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json"; sourceTree = "<group>"; };
+		EFB86CE120C025DF0011AF78 /* disputes-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "disputes-get.json"; sourceTree = "<group>"; };
+		EFB86CE320C025DF0011AF78 /* evnt_test_531zv1nto0a5pimuiza-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "evnt_test_531zv1nto0a5pimuiza-get.json"; sourceTree = "<group>"; };
+		EFB86CE420C025DF0011AF78 /* transfers-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "transfers-post.json"; sourceTree = "<group>"; };
+		EFB86CE520C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json"; sourceTree = "<group>"; };
+		EFB86CE620C025DF0011AF78 /* schedules-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "schedules-post.json"; sourceTree = "<group>"; };
+		EFB86CE720C025DF0011AF78 /* links-post.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "links-post.json"; sourceTree = "<group>"; };
+		EFB86CE820C025DF0011AF78 /* search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json"; sourceTree = "<group>"; };
+		EFB86CE920C025DF0011AF78 /* search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json"; sourceTree = "<group>"; };
+		EFB86CEA20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json"; sourceTree = "<group>"; };
+		EFB86CEB20C025DF0011AF78 /* links-get.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = "links-get.json"; sourceTree = "<group>"; };
+		EFB86CEC20C025DF0011AF78 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		EFB86CED20C025DF0011AF78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EFB86CEE20C025DF0011AF78 /* circle.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = circle.yml; sourceTree = "<group>"; };
+		EFB86CF120C025DF0011AF78 /* OmiseForex.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseForex.php; sourceTree = "<group>"; };
+		EFB86CF220C025DF0011AF78 /* OmiseSource.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseSource.php; sourceTree = "<group>"; };
+		EFB86CF320C025DF0011AF78 /* OmiseTest.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseTest.php; sourceTree = "<group>"; };
+		EFB86CF520C025DF0011AF78 /* OmiseApiResource.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseApiResource.php; sourceTree = "<group>"; };
+		EFB86CF720C025DF0011AF78 /* OmiseObject.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseObject.php; sourceTree = "<group>"; };
+		EFB86CF820C025DF0011AF78 /* OmiseVaultResource.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseVaultResource.php; sourceTree = "<group>"; };
+		EFB86CF920C025DF0011AF78 /* OmiseRefundList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseRefundList.php; sourceTree = "<group>"; };
+		EFB86CFA20C025DF0011AF78 /* OmiseTransaction.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseTransaction.php; sourceTree = "<group>"; };
+		EFB86CFB20C025DF0011AF78 /* OmiseOccurrence.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseOccurrence.php; sourceTree = "<group>"; };
+		EFB86CFC20C025DF0011AF78 /* OmiseCustomer.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseCustomer.php; sourceTree = "<group>"; };
+		EFB86CFD20C025DF0011AF78 /* OmiseBalance.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseBalance.php; sourceTree = "<group>"; };
+		EFB86CFE20C025DF0011AF78 /* OmiseScheduleList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseScheduleList.php; sourceTree = "<group>"; };
+		EFB86CFF20C025DF0011AF78 /* OmiseSchedule.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseSchedule.php; sourceTree = "<group>"; };
+		EFB86D0020C025DF0011AF78 /* OmiseRecipient.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseRecipient.php; sourceTree = "<group>"; };
+		EFB86D0120C025DF0011AF78 /* OmiseToken.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseToken.php; sourceTree = "<group>"; };
+		EFB86D0220C025DF0011AF78 /* OmiseOccurrenceList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseOccurrenceList.php; sourceTree = "<group>"; };
+		EFB86D0320C025DF0011AF78 /* OmiseCard.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseCard.php; sourceTree = "<group>"; };
+		EFB86D0420C025DF0011AF78 /* OmiseSearch.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseSearch.php; sourceTree = "<group>"; };
+		EFB86D0520C025DF0011AF78 /* OmiseAccount.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseAccount.php; sourceTree = "<group>"; };
+		EFB86D0620C025DF0011AF78 /* OmiseCardList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseCardList.php; sourceTree = "<group>"; };
+		EFB86D0720C025DF0011AF78 /* OmiseDispute.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseDispute.php; sourceTree = "<group>"; };
+		EFB86D0820C025DF0011AF78 /* OmiseTransfer.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseTransfer.php; sourceTree = "<group>"; };
+		EFB86D0920C025DF0011AF78 /* OmiseLink.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseLink.php; sourceTree = "<group>"; };
+		EFB86D0A20C025DF0011AF78 /* OmiseEvent.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseEvent.php; sourceTree = "<group>"; };
+		EFB86D0B20C025DF0011AF78 /* OmiseRefund.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseRefund.php; sourceTree = "<group>"; };
+		EFB86D0C20C025DF0011AF78 /* OmiseScheduler.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseScheduler.php; sourceTree = "<group>"; };
+		EFB86D0D20C025DF0011AF78 /* OmiseCharge.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseCharge.php; sourceTree = "<group>"; };
+		EFB86D0F20C025DF0011AF78 /* OmiseExceptions.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseExceptions.php; sourceTree = "<group>"; };
+		EFB86D1020C025DF0011AF78 /* Omise.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = Omise.php; sourceTree = "<group>"; };
+		EFB86D1220C025DF0011AF78 /* ca_certificates.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = ca_certificates.pem; sourceTree = "<group>"; };
+		EFB86D1320C025DF0011AF78 /* composer.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = composer.json; sourceTree = "<group>"; };
+		EFB86D1420C025DF0011AF78 /* JMMRewardPointSpentUsedGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointSpentUsedGetList.php; sourceTree = "<group>"; };
+		EFB86D1520C025DF0011AF78 /* JMMPushSyncSync.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPushSyncSync.php; sourceTree = "<group>"; };
+		EFB86D1620C025DF0011AF78 /* JMMHotDealGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMHotDealGetList.php; sourceTree = "<group>"; };
+		EFB86D1720C025DF0011AF78 /* testpush.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = testpush.php; sourceTree = "<group>"; };
+		EFB86D1820C025DF0011AF78 /* JMMUserAccountValidate.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMUserAccountValidate.php; sourceTree = "<group>"; };
+		EFB86D1920C025DF0011AF78 /* JMMMasterGet.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMMasterGet.php; sourceTree = "<group>"; };
+		EFB86D1A20C025DF0011AF78 /* JMMDisputeGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMDisputeGetList.php; sourceTree = "<group>"; };
+		EFB86D1C20C025DF0011AF78 /* noodle dry original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noodle dry original.jpg"; sourceTree = "<group>"; };
+		EFB86D1D20C025DF0011AF78 /* fried squid.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fried squid.jpg"; sourceTree = "<group>"; };
+		EFB86D1E20C025DF0011AF78 /* tubtim.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tubtim.jpg; sourceTree = "<group>"; };
+		EFB86D1F20C025DF0011AF78 /* sticky rice dessert.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "sticky rice dessert.jpg"; sourceTree = "<group>"; };
+		EFB86D2020C025DF0011AF78 /* tofu.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = tofu.jpg; sourceTree = "<group>"; };
+		EFB86D2120C025DF0011AF78 /* violet drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "violet drink.jpg"; sourceTree = "<group>"; };
+		EFB86D2220C025DF0011AF78 /* sushiShin.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sushiShin.jpg; sourceTree = "<group>"; };
+		EFB86D2320C025DF0011AF78 /* noodle red soup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noodle red soup.jpg"; sourceTree = "<group>"; };
+		EFB86D2420C025DF0011AF78 /* wonderful soup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "wonderful soup.jpg"; sourceTree = "<group>"; };
+		EFB86D2520C025DF0011AF78 /* fried shrimp.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "fried shrimp.jpg"; sourceTree = "<group>"; };
+		EFB86D2620C025DF0011AF78 /* mamarin_logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = mamarin_logo.jpg; sourceTree = "<group>"; };
+		EFB86D2720C025DF0011AF78 /* yellow drink.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "yellow drink.jpg"; sourceTree = "<group>"; };
+		EFB86D2820C025DF0011AF78 /* noodle soup original.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noodle soup original.jpg"; sourceTree = "<group>"; };
+		EFB86D2920C025DF0011AF78 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		EFB86D2A20C025DF0011AF78 /* promoBanner.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = promoBanner.jpg; sourceTree = "<group>"; };
+		EFB86D2B20C025DF0011AF78 /* ข้าวแห้งปลาอินทรีย์.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "ข้าวแห้งปลาอินทรีย์.jpg"; sourceTree = "<group>"; };
+		EFB86D2C20C025DF0011AF78 /* noodle dry red.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "noodle dry red.jpg"; sourceTree = "<group>"; };
+		EFB86D2D20C025DF0011AF78 /* MMR1.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = MMR1.jpg; sourceTree = "<group>"; };
+		EFB86D2E20C025DF0011AF78 /* NoImage.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = NoImage.jpg; sourceTree = "<group>"; };
+		EFB86D2F20C025DF0011AF78 /* clear soup.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "clear soup.jpg"; sourceTree = "<group>"; };
+		EFB86D3020C025DF0011AF78 /* red rice.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "red rice.jpg"; sourceTree = "<group>"; };
+		EFB86D3120C025DF0011AF78 /* promoThumbNail.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = promoThumbNail.jpg; sourceTree = "<group>"; };
+		EFB86D3220C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPushSyncUpdateByDeviceToken.php; sourceTree = "<group>"; };
+		EFB86D3320C025DF0011AF78 /* downloadImage.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = downloadImage.php; sourceTree = "<group>"; };
+		EFB86D3420C025DF0011AF78 /* dbConnect.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = dbConnect.php; sourceTree = "<group>"; };
+		EFB86D3520C025DF0011AF78 /* test.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = test.php; sourceTree = "<group>"; };
+		EFB86D3620C025DF0011AF78 /* JMMRewardPointSpentUsedMoreGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointSpentUsedMoreGetList.php; sourceTree = "<group>"; };
+		EFB86D3720C025DF0011AF78 /* emailTemplateForgotPassword.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = emailTemplateForgotPassword.html; sourceTree = "<group>"; };
+		EFB86D3820C025DF0011AF78 /* JMMReceiptUpdate.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMReceiptUpdate.php; sourceTree = "<group>"; };
+		EFB86D3920C025DF0011AF78 /* JMMReceiptWithModifiedDateGet.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMReceiptWithModifiedDateGet.php; sourceTree = "<group>"; };
+		EFB86D3A20C025DF0011AF78 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		EFB86D3B20C025DF0011AF78 /* JMMPromotionGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPromotionGetList.php; sourceTree = "<group>"; };
+		EFB86D3C20C025DF0011AF78 /* JMMDisputeInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMDisputeInsert.php; sourceTree = "<group>"; };
+		EFB86D3D20C025DF0011AF78 /* JMMUserAccountForgotPasswordInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMUserAccountForgotPasswordInsert.php; sourceTree = "<group>"; };
+		EFB86D3E20C025DF0011AF78 /* ResetPassword.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = ResetPassword.php; sourceTree = "<group>"; };
+		EFB86D3F20C025DF0011AF78 /* JMMRewardPointGet.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointGet.php; sourceTree = "<group>"; };
+		EFB86D4020C025DF0011AF78 /* OmiseCheckOut.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = OmiseCheckOut.php; sourceTree = "<group>"; };
+		EFB86D4120C025DF0011AF78 /* testMeta.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = testMeta.php; sourceTree = "<group>"; };
+		EFB86D4220C025DF0011AF78 /* urlinsertprefix.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = urlinsertprefix.php; sourceTree = "<group>"; };
+		EFB86D4320C025DF0011AF78 /* JMMPromoCodeInsert.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPromoCodeInsert.php; sourceTree = "<group>"; };
+		EFB86D4420C025DF0011AF78 /* JMMTermsOfService.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = JMMTermsOfService.html; sourceTree = "<group>"; };
+		EFB86D4520C025DF0011AF78 /* JMMReceiptMaxModifiedDateGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMReceiptMaxModifiedDateGetList.php; sourceTree = "<group>"; };
+		EFB86D4620C025DF0011AF78 /* JMMMenuGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMMenuGetList.php; sourceTree = "<group>"; };
+		EFB86D4720C025DF0011AF78 /* JMMCustomerTableGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMCustomerTableGetList.php; sourceTree = "<group>"; };
+		EFB86D4820C025DF0011AF78 /* JMMRewardPointSpentMoreGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMRewardPointSpentMoreGetList.php; sourceTree = "<group>"; };
+		EFB86D4920C025DF0011AF78 /* JMMUserAccountGet.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMUserAccountGet.php; sourceTree = "<group>"; };
+		EFB86D4A20C025DF0011AF78 /* modelm.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = modelm.php; sourceTree = "<group>"; };
+		EFB86D4B20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPushSyncUpdateTimeSynced.php; sourceTree = "<group>"; };
+		EFB86D4C20C025DF0011AF78 /* modelh.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = modelh.php; sourceTree = "<group>"; };
+		EFB86D4D20C025DF0011AF78 /* JMMDisputeReasonGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMDisputeReasonGetList.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -87,6 +501,7 @@
 		EFB86C1520C025BD0011AF78 = {
 			isa = PBXGroup;
 			children = (
+				EFB86C5920C025DE0011AF78 /* jummum2 url */,
 				EFB86C2020C025BD0011AF78 /* jummum2Url */,
 				EFB86C3F20C025BF0011AF78 /* jummum2UrlTests */,
 				EFB86C4A20C025BF0011AF78 /* jummum2UrlUITests */,
@@ -140,6 +555,516 @@
 				EFB86C4D20C025BF0011AF78 /* Info.plist */,
 			);
 			path = jummum2UrlUITests;
+			sourceTree = "<group>";
+		};
+		EFB86C5920C025DE0011AF78 /* jummum2 url */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C5A20C025DE0011AF78 /* ResetPasswordTimeOut.php */,
+				EFB86C5B20C025DE0011AF78 /* JMMWriteLog.php */,
+				EFB86C5C20C025DE0011AF78 /* JMMReceiptGet.php */,
+				EFB86C5D20C025DE0011AF78 /* JMMUserAccountInsert.php */,
+				EFB86C5E20C025DE0011AF78 /* JMMReceiptSummaryGetList.php */,
+				EFB86C5F20C025DE0011AF78 /* JMMRewardPointSpentGetList.php */,
+				EFB86C6020C025DE0011AF78 /* certificate */,
+				EFB86C6720C025DE0011AF78 /* JMMRewardPointInsert.php */,
+				EFB86C6820C025DE0011AF78 /* JMMPushReminder.php */,
+				EFB86C6920C025DE0011AF78 /* JMMLogInUserAccountInsert.php */,
+				EFB86C6A20C025DE0011AF78 /* urlinsertlistprefix.php */,
+				EFB86C6B20C025DE0011AF78 /* JMMPrivacyPolicy.html */,
+				EFB86C6C20C025DE0011AF78 /* omise-php */,
+				EFB86D1420C025DF0011AF78 /* JMMRewardPointSpentUsedGetList.php */,
+				EFB86D1520C025DF0011AF78 /* JMMPushSyncSync.php */,
+				EFB86D1620C025DF0011AF78 /* JMMHotDealGetList.php */,
+				EFB86D1720C025DF0011AF78 /* testpush.php */,
+				EFB86D1820C025DF0011AF78 /* JMMUserAccountValidate.php */,
+				EFB86D1920C025DF0011AF78 /* JMMMasterGet.php */,
+				EFB86D1A20C025DF0011AF78 /* JMMDisputeGetList.php */,
+				EFB86D1B20C025DF0011AF78 /* Image */,
+				EFB86D3220C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php */,
+				EFB86D3320C025DF0011AF78 /* downloadImage.php */,
+				EFB86D3420C025DF0011AF78 /* dbConnect.php */,
+				EFB86D3520C025DF0011AF78 /* test.php */,
+				EFB86D3620C025DF0011AF78 /* JMMRewardPointSpentUsedMoreGetList.php */,
+				EFB86D3720C025DF0011AF78 /* emailTemplateForgotPassword.html */,
+				EFB86D3820C025DF0011AF78 /* JMMReceiptUpdate.php */,
+				EFB86D3920C025DF0011AF78 /* JMMReceiptWithModifiedDateGet.php */,
+				EFB86D3A20C025DF0011AF78 /* .gitignore */,
+				EFB86D3B20C025DF0011AF78 /* JMMPromotionGetList.php */,
+				EFB86D3C20C025DF0011AF78 /* JMMDisputeInsert.php */,
+				EFB86D3D20C025DF0011AF78 /* JMMUserAccountForgotPasswordInsert.php */,
+				EFB86D3E20C025DF0011AF78 /* ResetPassword.php */,
+				EFB86D3F20C025DF0011AF78 /* JMMRewardPointGet.php */,
+				EFB86D4020C025DF0011AF78 /* OmiseCheckOut.php */,
+				EFB86D4120C025DF0011AF78 /* testMeta.php */,
+				EFB86D4220C025DF0011AF78 /* urlinsertprefix.php */,
+				EFB86D4320C025DF0011AF78 /* JMMPromoCodeInsert.php */,
+				EFB86D4420C025DF0011AF78 /* JMMTermsOfService.html */,
+				EFB86D4520C025DF0011AF78 /* JMMReceiptMaxModifiedDateGetList.php */,
+				EFB86D4620C025DF0011AF78 /* JMMMenuGetList.php */,
+				EFB86D4720C025DF0011AF78 /* JMMCustomerTableGetList.php */,
+				EFB86D4820C025DF0011AF78 /* JMMRewardPointSpentMoreGetList.php */,
+				EFB86D4920C025DF0011AF78 /* JMMUserAccountGet.php */,
+				EFB86D4A20C025DF0011AF78 /* modelm.php */,
+				EFB86D4B20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php */,
+				EFB86D4C20C025DF0011AF78 /* modelh.php */,
+				EFB86D4D20C025DF0011AF78 /* JMMDisputeReasonGetList.php */,
+			);
+			path = "jummum2 url";
+			sourceTree = "<group>";
+		};
+		EFB86C6020C025DE0011AF78 /* certificate */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C6120C025DE0011AF78 /* aps_development.cer */,
+				EFB86C6220C025DE0011AF78 /* CertificateSigningRequest.certSigningRequest */,
+				EFB86C6320C025DE0011AF78 /* ck.pem */,
+				EFB86C6420C025DE0011AF78 /* Certificates.p12 */,
+				EFB86C6520C025DE0011AF78 /* PushCert.pem */,
+				EFB86C6620C025DE0011AF78 /* PushKey.pem */,
+			);
+			path = certificate;
+			sourceTree = "<group>";
+		};
+		EFB86C6C20C025DE0011AF78 /* omise-php */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C6D20C025DE0011AF78 /* phpunit.xml */,
+				EFB86C6E20C025DE0011AF78 /* LICENSE */,
+				EFB86C6F20C025DE0011AF78 /* CHANGELOG.md */,
+				EFB86C7020C025DE0011AF78 /* tests */,
+				EFB86CEC20C025DF0011AF78 /* README.md */,
+				EFB86CED20C025DF0011AF78 /* .gitignore */,
+				EFB86CEE20C025DF0011AF78 /* circle.yml */,
+				EFB86CEF20C025DF0011AF78 /* lib */,
+				EFB86D1120C025DF0011AF78 /* data */,
+				EFB86D1320C025DF0011AF78 /* composer.json */,
+			);
+			path = "omise-php";
+			sourceTree = "<group>";
+		};
+		EFB86C7020C025DE0011AF78 /* tests */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C7120C025DE0011AF78 /* omise */,
+				EFB86C8C20C025DE0011AF78 /* fixtures */,
+			);
+			path = tests;
+			sourceTree = "<group>";
+		};
+		EFB86C7120C025DE0011AF78 /* omise */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C7220C025DE0011AF78 /* TestConfig.php */,
+				EFB86C7320C025DE0011AF78 /* RefundTest.php */,
+				EFB86C7420C025DE0011AF78 /* LinkTest.php */,
+				EFB86C7520C025DE0011AF78 /* res */,
+				EFB86C7820C025DE0011AF78 /* ForexTest.php */,
+				EFB86C7920C025DE0011AF78 /* RecipientTest.php */,
+				EFB86C7A20C025DE0011AF78 /* SchedulerTest.php */,
+				EFB86C7B20C025DE0011AF78 /* ScheduleTest.php */,
+				EFB86C7C20C025DE0011AF78 /* TransferTest.php */,
+				EFB86C7D20C025DE0011AF78 /* EventTest.php */,
+				EFB86C7E20C025DE0011AF78 /* OccurrenceTest.php */,
+				EFB86C7F20C025DE0011AF78 /* TransactionTest.php */,
+				EFB86C8020C025DE0011AF78 /* SourceTest.php */,
+				EFB86C8120C025DE0011AF78 /* CardTest.php */,
+				EFB86C8220C025DE0011AF78 /* CustomerTest.php */,
+				EFB86C8320C025DE0011AF78 /* SearchTest.php */,
+				EFB86C8420C025DE0011AF78 /* ChargeTest.php */,
+				EFB86C8520C025DE0011AF78 /* DisputeTest.php */,
+				EFB86C8620C025DE0011AF78 /* TokenTest.php */,
+				EFB86C8720C025DE0011AF78 /* BalanceTest.php */,
+				EFB86C8820C025DE0011AF78 /* exception */,
+				EFB86C8A20C025DE0011AF78 /* ClassExistsTest.php */,
+				EFB86C8B20C025DE0011AF78 /* AccountTest.php */,
+			);
+			path = omise;
+			sourceTree = "<group>";
+		};
+		EFB86C7520C025DE0011AF78 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C7620C025DE0011AF78 /* obj */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		EFB86C7620C025DE0011AF78 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C7720C025DE0011AF78 /* OmiseObjectTest.php */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		EFB86C8820C025DE0011AF78 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C8920C025DE0011AF78 /* OmiseExceptionTest.php */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		EFB86C8C20C025DE0011AF78 /* fixtures */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C8D20C025DE0011AF78 /* vault.omise.co */,
+				EFB86C9120C025DE0011AF78 /* api.omise.co */,
+			);
+			path = fixtures;
+			sourceTree = "<group>";
+		};
+		EFB86C8D20C025DE0011AF78 /* vault.omise.co */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C8E20C025DE0011AF78 /* tokens-post.json */,
+				EFB86C8F20C025DE0011AF78 /* tokens */,
+			);
+			path = vault.omise.co;
+			sourceTree = "<group>";
+		};
+		EFB86C8F20C025DE0011AF78 /* tokens */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9020C025DE0011AF78 /* tokn_test_4zmrjhuk2rndz24a6x0-get.json */,
+			);
+			path = tokens;
+			sourceTree = "<group>";
+		};
+		EFB86C9120C025DE0011AF78 /* api.omise.co */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9220C025DE0011AF78 /* customers */,
+				EFB86C9F20C025DE0011AF78 /* recipients-post.json */,
+				EFB86CA020C025DE0011AF78 /* occurrences */,
+				EFB86CA220C025DE0011AF78 /* charges-post.json */,
+				EFB86CA320C025DE0011AF78 /* transfers-get.json */,
+				EFB86CA420C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdl-get.json */,
+				EFB86CA520C025DE0011AF78 /* customers-post.json */,
+				EFB86CA620C025DE0011AF78 /* recipients-get.json */,
+				EFB86CA720C025DE0011AF78 /* transactions-get.json */,
+				EFB86CA820C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json */,
+				EFB86CA920C025DE0011AF78 /* events-get.json */,
+				EFB86CAA20C025DE0011AF78 /* account-get.json */,
+				EFB86CAB20C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */,
+				EFB86CAC20C025DE0011AF78 /* charges */,
+				EFB86CB920C025DE0011AF78 /* search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json */,
+				EFB86CBA20C025DE0011AF78 /* disputes */,
+				EFB86CC020C025DE0011AF78 /* forex */,
+				EFB86CC220C025DE0011AF78 /* charges-get.json */,
+				EFB86CC320C025DE0011AF78 /* schedules */,
+				EFB86CC820C025DE0011AF78 /* transfers */,
+				EFB86CCD20C025DE0011AF78 /* recipients */,
+				EFB86CD320C025DE0011AF78 /* schedules-get.json */,
+				EFB86CD420C025DE0011AF78 /* balance-get.json */,
+				EFB86CD520C025DE0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json */,
+				EFB86CD620C025DE0011AF78 /* search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json */,
+				EFB86CD720C025DE0011AF78 /* search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json */,
+				EFB86CD820C025DE0011AF78 /* transactions */,
+				EFB86CDA20C025DF0011AF78 /* search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json */,
+				EFB86CDB20C025DF0011AF78 /* sources-post.json */,
+				EFB86CDC20C025DF0011AF78 /* links */,
+				EFB86CDE20C025DF0011AF78 /* customers-get.json */,
+				EFB86CDF20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */,
+				EFB86CE020C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json */,
+				EFB86CE120C025DF0011AF78 /* disputes-get.json */,
+				EFB86CE220C025DF0011AF78 /* events */,
+				EFB86CE420C025DF0011AF78 /* transfers-post.json */,
+				EFB86CE520C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json */,
+				EFB86CE620C025DF0011AF78 /* schedules-post.json */,
+				EFB86CE720C025DF0011AF78 /* links-post.json */,
+				EFB86CE820C025DF0011AF78 /* search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json */,
+				EFB86CE920C025DF0011AF78 /* search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json */,
+				EFB86CEA20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json */,
+				EFB86CEB20C025DF0011AF78 /* links-get.json */,
+			);
+			path = api.omise.co;
+			sourceTree = "<group>";
+		};
+		EFB86C9220C025DE0011AF78 /* customers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9320C025DE0011AF78 /* cust_test_5234fzk37pi2mz0cen3 */,
+				EFB86C9620C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc */,
+				EFB86C9B20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-get.json */,
+				EFB86C9C20C025DE0011AF78 /* cust_test_5234fzk37pi2mz0cen3-get.json */,
+				EFB86C9D20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-delete.json */,
+				EFB86C9E20C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-patch.json */,
+			);
+			path = customers;
+			sourceTree = "<group>";
+		};
+		EFB86C9320C025DE0011AF78 /* cust_test_5234fzk37pi2mz0cen3 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9420C025DE0011AF78 /* cards-bGltaXQ9MQ-get.json */,
+				EFB86C9520C025DE0011AF78 /* schedules-get.json */,
+			);
+			path = cust_test_5234fzk37pi2mz0cen3;
+			sourceTree = "<group>";
+		};
+		EFB86C9620C025DE0011AF78 /* cust_test_4zmrjg2hct06ybwobqc */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9720C025DE0011AF78 /* cards */,
+			);
+			path = cust_test_4zmrjg2hct06ybwobqc;
+			sourceTree = "<group>";
+		};
+		EFB86C9720C025DE0011AF78 /* cards */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86C9820C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-get.json */,
+				EFB86C9920C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-delete.json */,
+				EFB86C9A20C025DE0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-patch.json */,
+			);
+			path = cards;
+			sourceTree = "<group>";
+		};
+		EFB86CA020C025DE0011AF78 /* occurrences */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CA120C025DE0011AF78 /* occu_test_58dt3strf4m1y7bqii8-get.json */,
+			);
+			path = occurrences;
+			sourceTree = "<group>";
+		};
+		EFB86CAC20C025DE0011AF78 /* charges */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CAD20C025DE0011AF78 /* schedules-get.json */,
+				EFB86CAE20C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj */,
+				EFB86CB420C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-get.json */,
+				EFB86CB520C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-patch.json */,
+				EFB86CB620C025DE0011AF78 /* chrg_test_53z5zoeovi39e1erbj0-get.json */,
+				EFB86CB720C025DE0011AF78 /* chrg_test_53z5zoeovi39e1erbj0 */,
+			);
+			path = charges;
+			sourceTree = "<group>";
+		};
+		EFB86CAE20C025DE0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CAF20C025DE0011AF78 /* refunds-post.json */,
+				EFB86CB020C025DE0011AF78 /* refunds-get.json */,
+				EFB86CB120C025DE0011AF78 /* refunds */,
+				EFB86CB320C025DE0011AF78 /* capture-post.json */,
+			);
+			path = chrg_test_4zmrjgxdh4ycj2qncoj;
+			sourceTree = "<group>";
+		};
+		EFB86CB120C025DE0011AF78 /* refunds */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CB220C025DE0011AF78 /* rfnd_test_4zmrjhlbqy587sw6fwt-get.json */,
+			);
+			path = refunds;
+			sourceTree = "<group>";
+		};
+		EFB86CB720C025DE0011AF78 /* chrg_test_53z5zoeovi39e1erbj0 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CB820C025DE0011AF78 /* reverse-post.json */,
+			);
+			path = chrg_test_53z5zoeovi39e1erbj0;
+			sourceTree = "<group>";
+		};
+		EFB86CBA20C025DE0011AF78 /* disputes */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CBB20C025DE0011AF78 /* open-get.json */,
+				EFB86CBC20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-patch.json */,
+				EFB86CBD20C025DE0011AF78 /* pending-get.json */,
+				EFB86CBE20C025DE0011AF78 /* closed-get.json */,
+				EFB86CBF20C025DE0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-get.json */,
+			);
+			path = disputes;
+			sourceTree = "<group>";
+		};
+		EFB86CC020C025DE0011AF78 /* forex */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CC120C025DE0011AF78 /* usd-get.json */,
+			);
+			path = forex;
+			sourceTree = "<group>";
+		};
+		EFB86CC320C025DE0011AF78 /* schedules */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CC420C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-delete.json */,
+				EFB86CC520C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5-get.json */,
+				EFB86CC620C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5 */,
+			);
+			path = schedules;
+			sourceTree = "<group>";
+		};
+		EFB86CC620C025DE0011AF78 /* schd_test_585t7iomh2dte3ejxh5 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CC720C025DE0011AF78 /* occurrences-get.json */,
+			);
+			path = schd_test_585t7iomh2dte3ejxh5;
+			sourceTree = "<group>";
+		};
+		EFB86CC820C025DE0011AF78 /* transfers */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CC920C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-get.json */,
+				EFB86CCA20C025DE0011AF78 /* schedules-get.json */,
+				EFB86CCB20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-patch.json */,
+				EFB86CCC20C025DE0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-delete.json */,
+			);
+			path = transfers;
+			sourceTree = "<group>";
+		};
+		EFB86CCD20C025DE0011AF78 /* recipients */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CCE20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-get.json */,
+				EFB86CCF20C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-patch.json */,
+				EFB86CD020C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77 */,
+				EFB86CD220C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77-delete.json */,
+			);
+			path = recipients;
+			sourceTree = "<group>";
+		};
+		EFB86CD020C025DE0011AF78 /* recp_test_508a9dytz793gxv9m77 */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CD120C025DE0011AF78 /* schedules-get.json */,
+			);
+			path = recp_test_508a9dytz793gxv9m77;
+			sourceTree = "<group>";
+		};
+		EFB86CD820C025DE0011AF78 /* transactions */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CD920C025DF0011AF78 /* trxn_test_4zmrjhlflnz6id6q0bo-get.json */,
+			);
+			path = transactions;
+			sourceTree = "<group>";
+		};
+		EFB86CDC20C025DF0011AF78 /* links */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CDD20C025DF0011AF78 /* link_test_56bsanpa365jnlbc7rt-get.json */,
+			);
+			path = links;
+			sourceTree = "<group>";
+		};
+		EFB86CE220C025DF0011AF78 /* events */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CE320C025DF0011AF78 /* evnt_test_531zv1nto0a5pimuiza-get.json */,
+			);
+			path = events;
+			sourceTree = "<group>";
+		};
+		EFB86CEF20C025DF0011AF78 /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CF020C025DF0011AF78 /* omise */,
+				EFB86D1020C025DF0011AF78 /* Omise.php */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		EFB86CF020C025DF0011AF78 /* omise */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CF120C025DF0011AF78 /* OmiseForex.php */,
+				EFB86CF220C025DF0011AF78 /* OmiseSource.php */,
+				EFB86CF320C025DF0011AF78 /* OmiseTest.php */,
+				EFB86CF420C025DF0011AF78 /* res */,
+				EFB86CF920C025DF0011AF78 /* OmiseRefundList.php */,
+				EFB86CFA20C025DF0011AF78 /* OmiseTransaction.php */,
+				EFB86CFB20C025DF0011AF78 /* OmiseOccurrence.php */,
+				EFB86CFC20C025DF0011AF78 /* OmiseCustomer.php */,
+				EFB86CFD20C025DF0011AF78 /* OmiseBalance.php */,
+				EFB86CFE20C025DF0011AF78 /* OmiseScheduleList.php */,
+				EFB86CFF20C025DF0011AF78 /* OmiseSchedule.php */,
+				EFB86D0020C025DF0011AF78 /* OmiseRecipient.php */,
+				EFB86D0120C025DF0011AF78 /* OmiseToken.php */,
+				EFB86D0220C025DF0011AF78 /* OmiseOccurrenceList.php */,
+				EFB86D0320C025DF0011AF78 /* OmiseCard.php */,
+				EFB86D0420C025DF0011AF78 /* OmiseSearch.php */,
+				EFB86D0520C025DF0011AF78 /* OmiseAccount.php */,
+				EFB86D0620C025DF0011AF78 /* OmiseCardList.php */,
+				EFB86D0720C025DF0011AF78 /* OmiseDispute.php */,
+				EFB86D0820C025DF0011AF78 /* OmiseTransfer.php */,
+				EFB86D0920C025DF0011AF78 /* OmiseLink.php */,
+				EFB86D0A20C025DF0011AF78 /* OmiseEvent.php */,
+				EFB86D0B20C025DF0011AF78 /* OmiseRefund.php */,
+				EFB86D0C20C025DF0011AF78 /* OmiseScheduler.php */,
+				EFB86D0D20C025DF0011AF78 /* OmiseCharge.php */,
+				EFB86D0E20C025DF0011AF78 /* exception */,
+			);
+			path = omise;
+			sourceTree = "<group>";
+		};
+		EFB86CF420C025DF0011AF78 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CF520C025DF0011AF78 /* OmiseApiResource.php */,
+				EFB86CF620C025DF0011AF78 /* obj */,
+				EFB86CF820C025DF0011AF78 /* OmiseVaultResource.php */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		EFB86CF620C025DF0011AF78 /* obj */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86CF720C025DF0011AF78 /* OmiseObject.php */,
+			);
+			path = obj;
+			sourceTree = "<group>";
+		};
+		EFB86D0E20C025DF0011AF78 /* exception */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86D0F20C025DF0011AF78 /* OmiseExceptions.php */,
+			);
+			path = exception;
+			sourceTree = "<group>";
+		};
+		EFB86D1120C025DF0011AF78 /* data */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86D1220C025DF0011AF78 /* ca_certificates.pem */,
+			);
+			path = data;
+			sourceTree = "<group>";
+		};
+		EFB86D1B20C025DF0011AF78 /* Image */ = {
+			isa = PBXGroup;
+			children = (
+				EFB86D1C20C025DF0011AF78 /* noodle dry original.jpg */,
+				EFB86D1D20C025DF0011AF78 /* fried squid.jpg */,
+				EFB86D1E20C025DF0011AF78 /* tubtim.jpg */,
+				EFB86D1F20C025DF0011AF78 /* sticky rice dessert.jpg */,
+				EFB86D2020C025DF0011AF78 /* tofu.jpg */,
+				EFB86D2120C025DF0011AF78 /* violet drink.jpg */,
+				EFB86D2220C025DF0011AF78 /* sushiShin.jpg */,
+				EFB86D2320C025DF0011AF78 /* noodle red soup.jpg */,
+				EFB86D2420C025DF0011AF78 /* wonderful soup.jpg */,
+				EFB86D2520C025DF0011AF78 /* fried shrimp.jpg */,
+				EFB86D2620C025DF0011AF78 /* mamarin_logo.jpg */,
+				EFB86D2720C025DF0011AF78 /* yellow drink.jpg */,
+				EFB86D2820C025DF0011AF78 /* noodle soup original.jpg */,
+				EFB86D2920C025DF0011AF78 /* logo.png */,
+				EFB86D2A20C025DF0011AF78 /* promoBanner.jpg */,
+				EFB86D2B20C025DF0011AF78 /* ข้าวแห้งปลาอินทรีย์.jpg */,
+				EFB86D2C20C025DF0011AF78 /* noodle dry red.jpg */,
+				EFB86D2D20C025DF0011AF78 /* MMR1.jpg */,
+				EFB86D2E20C025DF0011AF78 /* NoImage.jpg */,
+				EFB86D2F20C025DF0011AF78 /* clear soup.jpg */,
+				EFB86D3020C025DF0011AF78 /* red rice.jpg */,
+				EFB86D3120C025DF0011AF78 /* promoThumbNail.jpg */,
+			);
+			path = Image;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -245,9 +1170,216 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EFB86DC120C025DF0011AF78 /* links-get.json in Resources */,
+				EFB86D7D20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-get.json in Resources */,
+				EFB86D6320C025DF0011AF78 /* RefundTest.php in Resources */,
+				EFB86D9C20C025DF0011AF78 /* pending-get.json in Resources */,
+				EFB86DA120C025DF0011AF78 /* schd_test_585t7iomh2dte3ejxh5-delete.json in Resources */,
+				EFB86E1220C025DF0011AF78 /* JMMPromoCodeInsert.php in Resources */,
+				EFB86D9E20C025DF0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-get.json in Resources */,
+				EFB86DA320C025DF0011AF78 /* occurrences-get.json in Resources */,
+				EFB86D9B20C025DF0011AF78 /* dspt_test_4zgf15h89w8t775kcm8-patch.json in Resources */,
+				EFB86DD320C025DF0011AF78 /* OmiseToken.php in Resources */,
+				EFB86DAB20C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-delete.json in Resources */,
+				EFB86DA520C025DF0011AF78 /* schedules-get.json in Resources */,
+				EFB86D8820C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdl-get.json in Resources */,
+				EFB86DC620C025DF0011AF78 /* OmiseSource.php in Resources */,
+				EFB86D8C20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8-get.json in Resources */,
+				EFB86E1520C025DF0011AF78 /* JMMMenuGetList.php in Resources */,
+				EFB86D7920C025DF0011AF78 /* tokens-post.json in Resources */,
+				EFB86DF320C025DF0011AF78 /* wonderful soup.jpg in Resources */,
+				EFB86D5820C025DF0011AF78 /* PushCert.pem in Resources */,
+				EFB86D9820C025DF0011AF78 /* reverse-post.json in Resources */,
+				EFB86E0720C025DF0011AF78 /* JMMReceiptUpdate.php in Resources */,
+				EFB86DA820C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-get.json in Resources */,
+				EFB86D7020C025DF0011AF78 /* CustomerTest.php in Resources */,
 				EFB86C3420C025BF0011AF78 /* LaunchScreen.storyboard in Resources */,
+				EFB86DD020C025DF0011AF78 /* OmiseScheduleList.php in Resources */,
+				EFB86DF220C025DF0011AF78 /* noodle red soup.jpg in Resources */,
+				EFB86DB320C025DF0011AF78 /* sources-post.json in Resources */,
+				EFB86DB120C025DF0011AF78 /* trxn_test_4zmrjhlflnz6id6q0bo-get.json in Resources */,
+				EFB86D6620C025DF0011AF78 /* ForexTest.php in Resources */,
+				EFB86DFD20C025DF0011AF78 /* NoImage.jpg in Resources */,
+				EFB86DCE20C025DF0011AF78 /* OmiseCustomer.php in Resources */,
+				EFB86E1320C025DF0011AF78 /* JMMTermsOfService.html in Resources */,
+				EFB86D5E20C025DF0011AF78 /* JMMPrivacyPolicy.html in Resources */,
+				EFB86D6E20C025DF0011AF78 /* SourceTest.php in Resources */,
+				EFB86DBD20C025DF0011AF78 /* links-post.json in Resources */,
+				EFB86DBA20C025DF0011AF78 /* transfers-post.json in Resources */,
 				EFB86C3120C025BF0011AF78 /* Assets.xcassets in Resources */,
+				EFB86DF020C025DF0011AF78 /* violet drink.jpg in Resources */,
+				EFB86DD520C025DF0011AF78 /* OmiseCard.php in Resources */,
+				EFB86DC320C025DF0011AF78 /* .gitignore in Resources */,
 				EFB86C2F20C025BE0011AF78 /* Main.storyboard in Resources */,
+				EFB86D8420C025DF0011AF78 /* recipients-post.json in Resources */,
+				EFB86DE420C025DF0011AF78 /* JMMRewardPointSpentUsedGetList.php in Resources */,
+				EFB86D9920C025DF0011AF78 /* search-c2NvcGU9cmVmdW5kJnF1ZXJ5PSZmaWx0ZXJzJTVCdm9pZGVkJTVEPXRydWU-get.json in Resources */,
+				EFB86DE320C025DF0011AF78 /* composer.json in Resources */,
+				EFB86DE520C025DF0011AF78 /* JMMPushSyncSync.php in Resources */,
+				EFB86E1A20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php in Resources */,
+				EFB86DBF20C025DF0011AF78 /* search-c2NvcGU9bGluayZxdWVyeT1kZW1vJmZpbHRlcnMlNUJ1c2VkJTVEPXRydWUmb3JkZXI9cmV2ZXJzZV9jaHJvbm9sb2dpY2Fs-get.json in Resources */,
+				EFB86E1620C025DF0011AF78 /* JMMCustomerTableGetList.php in Resources */,
+				EFB86DCB20C025DF0011AF78 /* OmiseRefundList.php in Resources */,
+				EFB86D7F20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-patch.json in Resources */,
+				EFB86D8920C025DF0011AF78 /* customers-post.json in Resources */,
+				EFB86DB720C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0xJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json in Resources */,
+				EFB86E1920C025DF0011AF78 /* modelm.php in Resources */,
+				EFB86D5020C025DF0011AF78 /* JMMReceiptGet.php in Resources */,
+				EFB86DFA20C025DF0011AF78 /* ข้าวแห้งปลาอินทรีย์.jpg in Resources */,
+				EFB86D6D20C025DF0011AF78 /* TransactionTest.php in Resources */,
+				EFB86E1B20C025DF0011AF78 /* modelh.php in Resources */,
+				EFB86D5720C025DF0011AF78 /* Certificates.p12 in Resources */,
+				EFB86DD920C025DF0011AF78 /* OmiseDispute.php in Resources */,
+				EFB86D5A20C025DF0011AF78 /* JMMRewardPointInsert.php in Resources */,
+				EFB86DD120C025DF0011AF78 /* OmiseSchedule.php in Resources */,
+				EFB86D5320C025DF0011AF78 /* JMMRewardPointSpentGetList.php in Resources */,
+				EFB86DE820C025DF0011AF78 /* JMMUserAccountValidate.php in Resources */,
+				EFB86D6A20C025DF0011AF78 /* TransferTest.php in Resources */,
+				EFB86DA920C025DF0011AF78 /* recp_test_508a9dytz793gxv9m77-patch.json in Resources */,
+				EFB86D8220C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-delete.json in Resources */,
+				EFB86D5420C025DF0011AF78 /* aps_development.cer in Resources */,
+				EFB86E0B20C025DF0011AF78 /* JMMDisputeInsert.php in Resources */,
+				EFB86E0920C025DF0011AF78 /* .gitignore in Resources */,
+				EFB86DB020C025DF0011AF78 /* search-c2NvcGU9Y3VzdG9tZXImcXVlcnk9ZG9lJmZpbHRlcnMlNUJjcmVhdGVkJTVEPTIwMTctMDEtMDEuLjIwMTctMDgtMzA-get.json in Resources */,
+				EFB86D9620C025DF0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-patch.json in Resources */,
+				EFB86E0C20C025DF0011AF78 /* JMMUserAccountForgotPasswordInsert.php in Resources */,
+				EFB86E0E20C025DF0011AF78 /* JMMRewardPointGet.php in Resources */,
+				EFB86E0020C025DF0011AF78 /* promoThumbNail.jpg in Resources */,
+				EFB86DE620C025DF0011AF78 /* JMMHotDealGetList.php in Resources */,
+				EFB86D7E20C025DF0011AF78 /* card_test_4zmrjfzf0spz3mh63cs-delete.json in Resources */,
+				EFB86D7B20C025DF0011AF78 /* cards-bGltaXQ9MQ-get.json in Resources */,
+				EFB86DF620C025DF0011AF78 /* yellow drink.jpg in Resources */,
+				EFB86D8720C025DF0011AF78 /* transfers-get.json in Resources */,
+				EFB86D6820C025DF0011AF78 /* SchedulerTest.php in Resources */,
+				EFB86DDA20C025DF0011AF78 /* OmiseTransfer.php in Resources */,
+				EFB86DE020C025DF0011AF78 /* OmiseExceptions.php in Resources */,
+				EFB86DB420C025DF0011AF78 /* link_test_56bsanpa365jnlbc7rt-get.json in Resources */,
+				EFB86D5220C025DF0011AF78 /* JMMReceiptSummaryGetList.php in Resources */,
+				EFB86DDB20C025DF0011AF78 /* OmiseLink.php in Resources */,
+				EFB86DDC20C025DF0011AF78 /* OmiseEvent.php in Resources */,
+				EFB86DD220C025DF0011AF78 /* OmiseRecipient.php in Resources */,
+				EFB86E0320C025DF0011AF78 /* dbConnect.php in Resources */,
+				EFB86D9120C025DF0011AF78 /* refunds-post.json in Resources */,
+				EFB86DF820C025DF0011AF78 /* logo.png in Resources */,
+				EFB86D9320C025DF0011AF78 /* rfnd_test_4zmrjhlbqy587sw6fwt-get.json in Resources */,
+				EFB86DED20C025DF0011AF78 /* tubtim.jpg in Resources */,
+				EFB86D4F20C025DF0011AF78 /* JMMWriteLog.php in Resources */,
+				EFB86DA720C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-delete.json in Resources */,
+				EFB86E0220C025DF0011AF78 /* downloadImage.php in Resources */,
+				EFB86DEA20C025DF0011AF78 /* JMMDisputeGetList.php in Resources */,
+				EFB86DE920C025DF0011AF78 /* JMMMasterGet.php in Resources */,
+				EFB86D9520C025DF0011AF78 /* chrg_test_4zmrjgxdh4ycj2qncoj-get.json in Resources */,
+				EFB86DDE20C025DF0011AF78 /* OmiseScheduler.php in Resources */,
+				EFB86D9A20C025DF0011AF78 /* open-get.json in Resources */,
+				EFB86D5C20C025DF0011AF78 /* JMMLogInUserAccountInsert.php in Resources */,
+				EFB86D8F20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0yJm9yZGVyPXJldmVyc2VfY2hyb25vbG9naWNhbA-get.json in Resources */,
+				EFB86DDD20C025DF0011AF78 /* OmiseRefund.php in Resources */,
+				EFB86DB220C025DF0011AF78 /* search-c2NvcGU9ZGlzcHV0ZSZxdWVyeT1kZW1vJmZpbHRlcnMlNUJjYXJkX2xhc3RfZGlnaXRzJTVEPTU0NTQ-get.json in Resources */,
+				EFB86DE720C025DF0011AF78 /* testpush.php in Resources */,
+				EFB86DC020C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWUmcGFnZT0y-get.json in Resources */,
+				EFB86D8A20C025DF0011AF78 /* recipients-get.json in Resources */,
+				EFB86E1020C025DF0011AF78 /* testMeta.php in Resources */,
+				EFB86D6920C025DF0011AF78 /* ScheduleTest.php in Resources */,
+				EFB86DA620C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-patch.json in Resources */,
+				EFB86DF920C025DF0011AF78 /* promoBanner.jpg in Resources */,
+				EFB86DD620C025DF0011AF78 /* OmiseSearch.php in Resources */,
+				EFB86DD420C025DF0011AF78 /* OmiseOccurrenceList.php in Resources */,
+				EFB86D5920C025DF0011AF78 /* PushKey.pem in Resources */,
+				EFB86DEF20C025DF0011AF78 /* tofu.jpg in Resources */,
+				EFB86DF520C025DF0011AF78 /* mamarin_logo.jpg in Resources */,
+				EFB86E0420C025DF0011AF78 /* test.php in Resources */,
+				EFB86E1820C025DF0011AF78 /* JMMUserAccountGet.php in Resources */,
+				EFB86DB620C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MiZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json in Resources */,
+				EFB86DBB20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PW9yZGVyJmZpbHRlcnMlNUJjYXB0dXJlZCU1RD10cnVlJnBhZ2U9MSZvcmRlcj1yZXZlcnNlX2Nocm9ub2xvZ2ljYWw-get.json in Resources */,
+				EFB86D5620C025DF0011AF78 /* ck.pem in Resources */,
+				EFB86DDF20C025DF0011AF78 /* OmiseCharge.php in Resources */,
+				EFB86DA020C025DF0011AF78 /* charges-get.json in Resources */,
+				EFB86D9720C025DF0011AF78 /* chrg_test_53z5zoeovi39e1erbj0-get.json in Resources */,
+				EFB86D7520C025DF0011AF78 /* BalanceTest.php in Resources */,
+				EFB86DAD20C025DF0011AF78 /* balance-get.json in Resources */,
+				EFB86DCD20C025DF0011AF78 /* OmiseOccurrence.php in Resources */,
+				EFB86E0A20C025DF0011AF78 /* JMMPromotionGetList.php in Resources */,
+				EFB86DB820C025DF0011AF78 /* disputes-get.json in Resources */,
+				EFB86DFC20C025DF0011AF78 /* MMR1.jpg in Resources */,
+				EFB86DFB20C025DF0011AF78 /* noodle dry red.jpg in Resources */,
+				EFB86D9D20C025DF0011AF78 /* closed-get.json in Resources */,
+				EFB86D7A20C025DF0011AF78 /* tokn_test_4zmrjhuk2rndz24a6x0-get.json in Resources */,
+				EFB86D8320C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-patch.json in Resources */,
+				EFB86E1420C025DF0011AF78 /* JMMReceiptMaxModifiedDateGetList.php in Resources */,
+				EFB86D8620C025DF0011AF78 /* charges-post.json in Resources */,
+				EFB86D7620C025DF0011AF78 /* OmiseExceptionTest.php in Resources */,
+				EFB86DEE20C025DF0011AF78 /* sticky rice dessert.jpg in Resources */,
+				EFB86DC420C025DF0011AF78 /* circle.yml in Resources */,
+				EFB86D4E20C025DF0011AF78 /* ResetPasswordTimeOut.php in Resources */,
+				EFB86D8020C025DF0011AF78 /* cust_test_4zmrjg2hct06ybwobqc-get.json in Resources */,
+				EFB86DE220C025DF0011AF78 /* ca_certificates.pem in Resources */,
+				EFB86E0820C025DF0011AF78 /* JMMReceiptWithModifiedDateGet.php in Resources */,
+				EFB86D8120C025DF0011AF78 /* cust_test_5234fzk37pi2mz0cen3-get.json in Resources */,
+				EFB86DA420C025DF0011AF78 /* trsf_test_4zmrjicrvw7j6uhv1l4-get.json in Resources */,
+				EFB86D6020C025DF0011AF78 /* LICENSE in Resources */,
+				EFB86DA220C025DF0011AF78 /* schd_test_585t7iomh2dte3ejxh5-get.json in Resources */,
+				EFB86D6B20C025DF0011AF78 /* EventTest.php in Resources */,
+				EFB86D6C20C025DF0011AF78 /* OccurrenceTest.php in Resources */,
+				EFB86D5F20C025DF0011AF78 /* phpunit.xml in Resources */,
+				EFB86D6720C025DF0011AF78 /* RecipientTest.php in Resources */,
+				EFB86DCC20C025DF0011AF78 /* OmiseTransaction.php in Resources */,
+				EFB86DC520C025DF0011AF78 /* OmiseForex.php in Resources */,
+				EFB86DD820C025DF0011AF78 /* OmiseCardList.php in Resources */,
+				EFB86DAA20C025DF0011AF78 /* schedules-get.json in Resources */,
+				EFB86D9020C025DF0011AF78 /* schedules-get.json in Resources */,
+				EFB86DEC20C025DF0011AF78 /* fried squid.jpg in Resources */,
+				EFB86DCA20C025DF0011AF78 /* OmiseVaultResource.php in Resources */,
+				EFB86DAF20C025DF0011AF78 /* search-c2NvcGU9cmVjaXBpZW50JnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmFjdGl2ZSU1RD10cnVl-get.json in Resources */,
+				EFB86DC920C025DF0011AF78 /* OmiseObject.php in Resources */,
+				EFB86DFF20C025DF0011AF78 /* red rice.jpg in Resources */,
+				EFB86DB520C025DF0011AF78 /* customers-get.json in Resources */,
+				EFB86D9420C025DF0011AF78 /* capture-post.json in Resources */,
+				EFB86D7120C025DF0011AF78 /* SearchTest.php in Resources */,
+				EFB86D9220C025DF0011AF78 /* refunds-get.json in Resources */,
+				EFB86DAC20C025DF0011AF78 /* schedules-get.json in Resources */,
+				EFB86E0620C025DF0011AF78 /* emailTemplateForgotPassword.html in Resources */,
+				EFB86D7220C025DF0011AF78 /* ChargeTest.php in Resources */,
+				EFB86D8E20C025DF0011AF78 /* account-get.json in Resources */,
+				EFB86D8D20C025DF0011AF78 /* events-get.json in Resources */,
+				EFB86D8B20C025DF0011AF78 /* transactions-get.json in Resources */,
+				EFB86DF720C025DF0011AF78 /* noodle soup original.jpg in Resources */,
+				EFB86D6220C025DF0011AF78 /* TestConfig.php in Resources */,
+				EFB86D6F20C025DF0011AF78 /* CardTest.php in Resources */,
+				EFB86D6520C025DF0011AF78 /* OmiseObjectTest.php in Resources */,
+				EFB86DC220C025DF0011AF78 /* README.md in Resources */,
+				EFB86D5520C025DF0011AF78 /* CertificateSigningRequest.certSigningRequest in Resources */,
+				EFB86DB920C025DF0011AF78 /* evnt_test_531zv1nto0a5pimuiza-get.json in Resources */,
+				EFB86E1120C025DF0011AF78 /* urlinsertprefix.php in Resources */,
+				EFB86D8520C025DF0011AF78 /* occu_test_58dt3strf4m1y7bqii8-get.json in Resources */,
+				EFB86D5120C025DF0011AF78 /* JMMUserAccountInsert.php in Resources */,
+				EFB86D7820C025DF0011AF78 /* AccountTest.php in Resources */,
+				EFB86DFE20C025DF0011AF78 /* clear soup.jpg in Resources */,
+				EFB86E0F20C025DF0011AF78 /* OmiseCheckOut.php in Resources */,
+				EFB86DD720C025DF0011AF78 /* OmiseAccount.php in Resources */,
+				EFB86DEB20C025DF0011AF78 /* noodle dry original.jpg in Resources */,
+				EFB86E0520C025DF0011AF78 /* JMMRewardPointSpentUsedMoreGetList.php in Resources */,
+				EFB86D5D20C025DF0011AF78 /* urlinsertlistprefix.php in Resources */,
+				EFB86DCF20C025DF0011AF78 /* OmiseBalance.php in Resources */,
+				EFB86E0D20C025DF0011AF78 /* ResetPassword.php in Resources */,
+				EFB86DF420C025DF0011AF78 /* fried shrimp.jpg in Resources */,
+				EFB86DC720C025DF0011AF78 /* OmiseTest.php in Resources */,
+				EFB86E0120C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php in Resources */,
+				EFB86DAE20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json in Resources */,
+				EFB86E1C20C025DF0011AF78 /* JMMDisputeReasonGetList.php in Resources */,
+				EFB86D7720C025DF0011AF78 /* ClassExistsTest.php in Resources */,
+				EFB86D6120C025DF0011AF78 /* CHANGELOG.md in Resources */,
+				EFB86D6420C025DF0011AF78 /* LinkTest.php in Resources */,
+				EFB86DE120C025DF0011AF78 /* Omise.php in Resources */,
+				EFB86D7320C025DF0011AF78 /* DisputeTest.php in Resources */,
+				EFB86D7420C025DF0011AF78 /* TokenTest.php in Resources */,
+				EFB86DF120C025DF0011AF78 /* sushiShin.jpg in Resources */,
+				EFB86DBE20C025DF0011AF78 /* search-c2NvcGU9dHJhbnNmZXImcXVlcnk9ZGVtbyU0MG9taXNlLmNvJmZpbHRlcnMlNUJjdXJyZW5jeSU1RD10aGI-get.json in Resources */,
+				EFB86DC820C025DF0011AF78 /* OmiseApiResource.php in Resources */,
+				EFB86D5B20C025DF0011AF78 /* JMMPushReminder.php in Resources */,
+				EFB86D9F20C025DF0011AF78 /* usd-get.json in Resources */,
+				EFB86DBC20C025DF0011AF78 /* schedules-post.json in Resources */,
+				EFB86E1720C025DF0011AF78 /* JMMRewardPointSpentMoreGetList.php in Resources */,
+				EFB86D7C20C025DF0011AF78 /* schedules-get.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
