@@ -57,15 +57,19 @@
         $selectedRow = getSelectedRow($sql);
         $pushSyncDeviceTokenAdmin = $selectedRow[0]["Value"];
         sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'','jill','negotiation arrive!',0,'',0);
+        //****************send noti to shop (turn on light)
+        alarmAdmin();
+        //****************
         
     }
     else if($status == 13)
     {
         //get pushSync Device in ffd
-        $sql = "select DbName,DeviceTokenReceiveOrder from FFD.branch where branchID = '$branchID'";
+        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDbName = $selectedRow[0]["DbName"];
         $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
+        $urlNoti = $selectedRow[0]["UrlNoti"];
     }
     
     
@@ -81,7 +85,10 @@
     if($status == 13)
     {
         $msg = "Review negotiate";
-        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../FFD/MAMARIN5/','jill',$msg,$receiptID,'cancelOrder',0);
+        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'cancelOrder',0);
+        //****************send noti to shop (turn on light)
+        alarmShop($urlNoti);
+        //****************
     }
     
     

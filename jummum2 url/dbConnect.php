@@ -6,7 +6,43 @@
     $globalDBName;
     $retryNo;
 
-    
+    function alarmAdmin()
+    {
+        $url = str_replace("jinglejill.com","jinglejill.dyndns.co.za","http://jinglejill.com:350/LEDADMIN=ON");
+        
+        
+        // create a new cURL resource
+        $ch = curl_init();
+        
+        // set URL and other appropriate options
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        
+        // grab URL and pass it to the browser
+        curl_exec($ch);
+        
+        // close cURL resource, and free up system resources
+        curl_close($ch);
+    }
+
+    function alarmShop($urlNoti)
+    {
+        $url = str_replace("jinglejill.com",$urlNoti,"http://jinglejill.com:350/LED=ON");
+        writeToLog($url);
+        
+        // create a new cURL resource
+        $ch = curl_init();
+        
+        // set URL and other appropriate options
+        curl_setopt($ch, CURLOPT_URL, $url);
+        curl_setopt($ch, CURLOPT_HEADER, 0);
+        
+        // grab URL and pass it to the browser
+        curl_exec($ch);
+        
+        // close cURL resource, and free up system resources
+        curl_close($ch);
+    }
 
     function generate_strings($number, $length) {
         
@@ -357,6 +393,7 @@
     {
         $paramBody = array(
                            'alert' => $msg
+                           ,'sound' => "default"
                            );
         sendPushNotification($deviceToken, $paramBody);
     }

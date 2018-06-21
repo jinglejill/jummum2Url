@@ -39,7 +39,7 @@
         $requestDate = date('Y-m-d H:i:s', time());
         $randomString = generateRandomString();
         $codeReset = password_hash($username . $requestDate . $randomString, PASSWORD_DEFAULT);//
-        $emailBody = file_get_contents('./emailTemplateForgotPassword.html');
+        $emailBody = file_get_contents('./htmlEmailTemplateForgotPassword.html');
         $emailBody = str_replace("#codereset#",$codeReset,$emailBody);
         
         

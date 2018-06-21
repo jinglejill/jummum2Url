@@ -8,9 +8,6 @@
     
     
     
-    //test git
-    
-    
     // Check connection
     if (mysqli_connect_errno())
     {

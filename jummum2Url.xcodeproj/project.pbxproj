@@ -224,6 +224,7 @@
 		EFB86E1A20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4B20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php */; };
 		EFB86E1B20C025DF0011AF78 /* modelh.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4C20C025DF0011AF78 /* modelh.php */; };
 		EFB86E1C20C025DF0011AF78 /* JMMDisputeReasonGetList.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB86D4D20C025DF0011AF78 /* JMMDisputeReasonGetList.php */; };
+		EFB8812320C6343D0011AF78 /* ping.php in Resources */ = {isa = PBXBuildFile; fileRef = EFB8812220C6343D0011AF78 /* ping.php */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -471,6 +472,7 @@
 		EFB86D4B20C025DF0011AF78 /* JMMPushSyncUpdateTimeSynced.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMPushSyncUpdateTimeSynced.php; sourceTree = "<group>"; };
 		EFB86D4C20C025DF0011AF78 /* modelh.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = modelh.php; sourceTree = "<group>"; };
 		EFB86D4D20C025DF0011AF78 /* JMMDisputeReasonGetList.php */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.php; path = JMMDisputeReasonGetList.php; sourceTree = "<group>"; };
+		EFB8812220C6343D0011AF78 /* ping.php */ = {isa = PBXFileReference; lastKnownFileType = text.script.php; path = ping.php; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -609,6 +611,7 @@
 				EFB86D1720C025DF0011AF78 /* testpush.php */,
 				EFB86C6A20C025DE0011AF78 /* urlinsertlistprefix.php */,
 				EFB86D4220C025DF0011AF78 /* urlinsertprefix.php */,
+				EFB8812220C6343D0011AF78 /* ping.php */,
 			);
 			path = "jummum2 url";
 			sourceTree = "<group>";
@@ -1364,6 +1367,7 @@
 				EFB86DF420C025DF0011AF78 /* fried shrimp.jpg in Resources */,
 				EFB86DC720C025DF0011AF78 /* OmiseTest.php in Resources */,
 				EFB86E0120C025DF0011AF78 /* JMMPushSyncUpdateByDeviceToken.php in Resources */,
+				EFB8812320C6343D0011AF78 /* ping.php in Resources */,
 				EFB86DAE20C025DF0011AF78 /* search-c2NvcGU9Y2hhcmdlJnF1ZXJ5PWRlbW8mZmlsdGVycyU1QmNhcHR1cmVkJTVEPXRydWU-get.json in Resources */,
 				EFB86E1C20C025DF0011AF78 /* JMMDisputeReasonGetList.php in Resources */,
 				EFB86D7720C025DF0011AF78 /* ClassExistsTest.php in Resources */,

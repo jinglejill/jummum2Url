@@ -19,7 +19,7 @@
     writeToLog("set auto commit to off");
     
     
-    $sql = "select * from wp_users left join testShopUpMember on wp_users.user_login = testShopUpMember.Email where wp_users.id >= 16";
+    $sql = "select * from wp_users left join testShopUpMemberNew on wp_users.user_login = testShopUpMemberNew.Email where wp_users.id between 7351 and 7411";
     $selectedRow = getSelectedRow($sql);
     for($i=0; $i<sizeof($selectedRow); $i++)
     {
@@ -31,8 +31,6 @@
         $province = $selectedRow[$i]["Province"];
         $postCode = $selectedRow[$i]["PostCode"];
         $phoneNo = $selectedRow[$i]["PhoneNo"];
-        $metaKey = 'wp_capabilities';
-        $metaValue = 'a:1:{s:8:"customer";b:1;}';
         $sql = "insert into wp_usermeta (`user_id`, `meta_key`, `meta_value`) values ($id,'billing_first_name','$firstName')";
         $sql .= ",($id,'billing_last_name','$lastName')";
         $sql .= ",($id,'billing_address_1','$address')";

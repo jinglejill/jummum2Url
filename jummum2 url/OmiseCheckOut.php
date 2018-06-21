@@ -195,7 +195,7 @@
         }
 
         
-        $sql = "select *, 1 IdInserted from Receipt where ReceiptID = '$receiptID';";
+        $sql = "select * from Receipt where ReceiptID = '$receiptID';";
         $sqlAll = $sql;
         //-----
         
@@ -236,7 +236,7 @@
             
             //**********sync device token อื่น
             //select row ที่แก้ไข ขึ้นมาเก็บไว้
-            $sql = "select *, 1 IdInserted from OrderTaking where OrderTakingID in ('$otOrderTakingID[0]'";
+            $sql = "select * from OrderTaking where OrderTakingID in ('$otOrderTakingID[0]'";
             for($i=1; $i<$countOtOrderTaking; $i++)
             {
                 $sql .= ",'$otOrderTakingID[$i]'";
@@ -280,7 +280,7 @@
             
             //**********sync device token อื่น
             //select row ที่แก้ไข ขึ้นมาเก็บไว้
-            $sql = "select *, 1 IdInserted from OrderNote where OrderNoteID in ('$onOrderNoteID[0]'";
+            $sql = "select * from OrderNote where OrderNoteID in ('$onOrderNoteID[0]'";
             for($i=1; $i<$countOnOrderNote; $i++)
             {
                 $sql .= ",'$onOrderNoteID[$i]'";
@@ -365,10 +365,11 @@
         
         //insert into pushsync of db branchID
         //-----****************************
-        $sql = "select DbName,DeviceTokenReceiveOrder from FFD.branch where branchID = '$branchID'";
+        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDbName = $selectedRow[0]["DbName"];
         $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
+        $urlNoti = $selectedRow[0]["UrlNoti"];
         
     
         
@@ -455,10 +456,19 @@
         
         
         
+        
+
+        
+        
+        
+        
+        
         //do script successful
         mysqli_commit($con);
-        writeToLog("test receiptID: " . $receiptID);
-        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../FFD/MAMARIN5/','jill',$msg,$receiptID,'printKitchenBill',1);
+        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'printKitchenBill',1);
+        //****************send noti to shop (turn on light)
+        alarmShop($urlNoti);
+        //****************
         mysqli_close($con);
         
         
@@ -466,7 +476,9 @@
         
         writeToLog("query commit, file: " . basename(__FILE__) . ", user: " . $_POST['modifiedUser']);
         $response = array('status' => '1', 'sql' => $sql, 'tableName' => 'OmiseCheckOut', dataJson => $dataJson);
+        
         echo json_encode($response);
+        
         exit();
     }
     else
