@@ -39,7 +39,7 @@
         
     }
     $sql .= $sqlCustomerTable . ";";
-    $sql .= "select * from JUMMUM2.setting;";
+    $sql .= "select * from JUMMUM3.setting;";
     writeToLog("sql = " . $sql);
     
     

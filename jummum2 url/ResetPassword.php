@@ -69,7 +69,7 @@ function validateForm()
 </tr>
 <?php
     include_once("dbConnect.php");
-    setConnectionValue("JUMMUM2");
+    setConnectionValue("JUMMUM3");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     
