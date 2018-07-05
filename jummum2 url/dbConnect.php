@@ -49,7 +49,9 @@
         
         mt_srand(10000000 * (double)microtime() * $length); // Generate a randome string
         
-        $salt    = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXY3456789"; // the characters you want to allow
+        $salt    = "ABCDEFGHJKMNPQRSTUVWXY3456789"; // the characters you want to allow
+//        $salt    = "abcdefghjkmnpqrstuvwxyzABCDEFGHJKMNPQRSTUVWXY3456789"; // the characters you want to allow
+        
         
         $len    = strlen($salt);
         
@@ -402,22 +404,45 @@
     {
         if($category == '')
         {
-            $paramBody = array(
-                               'alert' => $msg
-                               ,'sound' => "default"
-                               ,'content-available' => $contentAvailable
-                               ,'receiptID' => $receiptID
-                               );
+            if($msg == '')
+            {
+                $paramBody = array(
+                                   'sound' => "default"
+                                   ,'content-available' => $contentAvailable
+                                   ,'receiptID' => $receiptID
+                                   );
+            }
+            else
+            {
+                $paramBody = array(
+                                   'alert' => $msg
+                                   ,'sound' => "default"
+                                   ,'content-available' => $contentAvailable
+                                   ,'receiptID' => $receiptID
+                                   );
+            }
         }
         else
         {
-            $paramBody = array(
-                               'alert' => $msg
-                               ,'sound' => "default"
-                               ,'category' => $category
-                               ,'content-available' => $contentAvailable
-                               ,'receiptID' => $receiptID
-                               );
+            if($msg == '')
+            {
+                $paramBody = array(
+                                   'sound' => "default"
+                                   ,'category' => $category
+                                   ,'content-available' => $contentAvailable
+                                   ,'receiptID' => $receiptID
+                                   );
+            }
+            else
+            {
+                $paramBody = array(
+                                   'alert' => $msg
+                                   ,'sound' => "default"
+                                   ,'category' => $category
+                                   ,'content-available' => $contentAvailable
+                                   ,'receiptID' => $receiptID
+                                   );
+            }
         }
         
         sendPushNotificationWithPath($deviceToken, $paramBody, $path, $passForCk ,$paramBody2);
@@ -729,7 +754,7 @@
             return;
         }
         writeToLog("send push to device: " . $strDeviceToken . ", body: " . json_encode($arrBody));
-        writeToLog("test data send push to device: " . $strDeviceToken . ", body: " . json_encode($arrBody2));
+//        writeToLog("test data send push to device: " . $strDeviceToken . ", body: " . json_encode($arrBody2));
         global $pushFail;
         $token = $strDeviceToken;
         $pass = $passForCk;//'jill';
@@ -776,7 +801,7 @@
         {
             $status = "1";
             writeToLog("push notification: success, device token : " . $strDeviceToken . ", payload: " . json_encode($arrBody));
-            writeToLog("test data push notification: success, device token : " . $strDeviceToken . ", payload: " . json_encode($arrBody2));
+//            writeToLog("test data push notification: success, device token : " . $strDeviceToken . ", payload: " . json_encode($arrBody2));
         }
         
         fclose($fp);

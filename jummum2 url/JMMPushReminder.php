@@ -34,7 +34,7 @@
     
     
     
-//    $reminderMinute = array('180','180','180');
+    $reminderMinute = array('180','180','180');
 //    $reminderMinute = array('10','10','10');
     for($i=0; $i<sizeof($reminderMinute); $i++)
     {
@@ -81,18 +81,19 @@
             array_push($arrOfTableArray,$orderTakingList);
             array_push($arrOfTableArray,$orderNoteList);
             $paramBody2 = array('receipt'=>$arrOfTableArray);
-            $msg = 'New order coming!! receipt No:' . $receiptNoID . ' ,noti time:' . date("Y/m/d H:i:s");
+            $msg = 'New order coming!! receipt No:' . $receiptNoID;
+//            $msg = 'New order coming!! receipt No:' . $receiptNoID . ' ,noti time:' . date("Y/m/d H:i:s");
             
             
             
             
 //            sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../FFD/MAMARIN5/','jill',$msg,$paramBody2);
             sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../FFD/MAMARIN5/','jill',$msg,$receiptID);
-            writeToLog("test send push, " . $msg);
+//            writeToLog("test send push, " . $msg);
         }
         else
         {
-            writeToLog("test break");
+//            writeToLog("test break");
             break;
         }
     }

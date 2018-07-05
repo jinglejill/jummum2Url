@@ -48,6 +48,13 @@
     }
     
     
+    //get pushSync Device in ffd
+    $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
+    $selectedRow = getSelectedRow($sql);
+    $pushSyncDbName = $selectedRow[0]["DbName"];
+    $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
+    $urlNoti = $selectedRow[0]["UrlNoti"];
+    
     
     if($status == 11)
     {
@@ -56,21 +63,25 @@
         $sql = "select * from setting where KeyName = 'DeviceTokenAdmin'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDeviceTokenAdmin = $selectedRow[0]["Value"];
-        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'','jill','negotiation arrive!',0,'',0);
+    sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenAdmin,'','jill','negotiation arrive!',0,'',0);
         //****************send noti to shop (turn on light)
         alarmAdmin();
         //****************
         
+        
+        $msg = "";
+        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'cancelOrder',0);
+        
     }
-    else if($status == 13)
-    {
-        //get pushSync Device in ffd
-        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
-        $selectedRow = getSelectedRow($sql);
-        $pushSyncDbName = $selectedRow[0]["DbName"];
-        $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
-        $urlNoti = $selectedRow[0]["UrlNoti"];
-    }
+//    else if($status == 13)
+//    {
+//        //get pushSync Device in ffd
+//        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
+//        $selectedRow = getSelectedRow($sql);
+//        $pushSyncDbName = $selectedRow[0]["DbName"];
+//        $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
+//        $urlNoti = $selectedRow[0]["UrlNoti"];
+//    }
     
     
     

@@ -57,7 +57,7 @@
         if($ret != "")
         {
             mysqli_rollback($con);
-            putAlertToDevice();
+//            putAlertToDevice();
             echo json_encode($ret);
             exit();
         }
@@ -89,7 +89,7 @@
         if($ret != "")
         {
             mysqli_rollback($con);
-            putAlertToDevice();
+//            putAlertToDevice();
             echo json_encode($ret);
             exit();
         }
@@ -102,7 +102,7 @@
         if($ret != "")
         {
             mysqli_rollback($con);
-            putAlertToDevice();
+//            putAlertToDevice();
             echo json_encode($ret);
             exit();
         }

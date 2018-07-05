@@ -22,7 +22,7 @@
         $modifiedUser = $_POST["modifiedUser"];
         $modifiedDate = $_POST["modifiedDate"];
     }
-    else
+    else if(isset($_GET["admin"]))//admin
     {
         $branchID = $_GET["branchID"];
         
@@ -63,7 +63,7 @@
     if($ret != "")
     {
         mysqli_rollback($con);
-        putAlertToDevice();
+//        putAlertToDevice();
         echo json_encode($ret);
         exit();
     }
@@ -107,21 +107,21 @@
     if($ret != "")
     {
         mysqli_rollback($con);
-        putAlertToDevice();
+//        putAlertToDevice();
         echo json_encode($ret);
         exit();
     }
     
     
     
-    if($type == 1 || $type == 2)
+    if($type == 1 || $type == 2 || $type == 5)
     {
         //get pushSync Device in ffd
-        $sql = "select DbName,DeviceTokenReceiveOrder from FFD.branch where branchID = '$branchID'";
+        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDbName = $selectedRow[0]["DbName"];
         $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
-        
+        $urlNoti = $selectedRow[0]["UrlNoti"];
         
 
     }
@@ -139,10 +139,13 @@
     
     //do script successful
     mysqli_commit($con);
-    if($type == 1 || $type == 2)
+    if($type == 1 || $type == 2 || $type == 5)
     {
-        $msg = $type == 1?"Order cancel request":"Open dispute request";
-        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../FFD/MAMARIN5/','jill',$msg,$receiptID,'cancelOrder',0);
+        $msg = $type == 1?"Order cancel request":$type == 2?"Open dispute request":"Review negotiation";
+        sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'cancelOrder',0);
+        //****************send noti to shop (turn on light)
+        alarmShop($urlNoti);
+        //****************
     }
     
     

@@ -16,7 +16,8 @@
     $b64image = "";
     if($imageFileName != "")
     {
-        $filenameIn  = "./Image/" . $imageFileName;
+//        $filenameIn  = "./Image/" . $imageFileName;
+        $filenameIn  = $imageFileName;
         
         // Check if file already exists
         if (file_exists($filenameIn))

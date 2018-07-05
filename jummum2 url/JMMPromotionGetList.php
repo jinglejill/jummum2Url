@@ -23,9 +23,9 @@
     {
         $userAccountID = $_POST["userAccountID"];
     }
-    if(isset($_POST["mainBranchID"]))
+    if(isset($_POST["branchID"]))
     {
-        $mainBranchID = $_POST["mainBranchID"];
+        $branchID = $_POST["branchID"];
     }
     if(isset($_POST["totalAmount"]))
     {
@@ -113,7 +113,7 @@
     
     if($voucherValid)
     {
-        $sql = "select * from promotionBranch where promotionID = '$promotionID' and branchID = '$mainBranchID'";
+        $sql = "select * from promotionBranch where promotionID = '$promotionID' and branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         if(sizeof($selectedRow) == 0)
         {
@@ -222,6 +222,20 @@
             {
                 $voucherValid2 = 0;
                 $warningMsg2 = "ไม่มี Voucher Code นี้";
+            }
+        }
+        
+        
+        
+        if($voucherValid2)
+        {
+            $sql = "select * from rewardRedemptionBranch where rewardRedemptionID = '$rewardRedemptionID' and branchID = '$branchID'";
+            $selectedRow = getSelectedRow($sql);
+            if(sizeof($selectedRow) == 0)
+            {
+                //คูปองส่วนลดไม่ถูกต้อง -> คูปองไม่สามารถใช้ได้กับร้านนี้
+                $voucherValid2 = 0;
+                $warningMsg2 = "คูปองไม่สามารถใช้ได้กับร้านนี้";
             }
         }
         

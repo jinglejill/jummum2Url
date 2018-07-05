@@ -450,8 +450,9 @@
         array_push($arrOfTableArray,$orderNoteList);
         
         $paramBody2 = array('receipt'=>$arrOfTableArray);
-        $msg = 'New order coming!! receipt No:' . $receiptNoID . ' ,noti time:' . date("Y/m/d H:i:s");
-        writeToLog("test data more than 1 order: " . json_encode($paramBody2));
+        $msg = 'New order coming!! receipt No:' . $receiptNoID;
+//        $msg = 'New order coming!! receipt No:' . $receiptNoID . ' ,noti time:' . date("Y/m/d H:i:s");
+//        writeToLog("test data more than 1 order: " . json_encode($paramBody2));
         
         
         

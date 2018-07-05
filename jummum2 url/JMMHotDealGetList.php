@@ -8,9 +8,10 @@
     
     
     
-    if(isset($_POST["memberID"]))
+    if(isset($_POST["memberID"]) && isset($_POST["promotionListCount"]))
     {
         $memberID = $_POST["memberID"];
+        $promotionListCount = $_POST["promotionListCount"];
     }
     
     
@@ -22,9 +23,10 @@
     }
     
     
+    $startRow = $promotionListCount + 1;
+    $endRow = $promotionListCount + 10;
     //select table -> branch, customerTable
-    $sql = "SELECT * FROM HotDeal left join (select branchID,count(*) as frequency from receipt where memberID = '$memberID' GROUP BY branchID) a on hotdeal.BranchID = a.branchID left join (select branchID,SUM(CashAmount+CreditCardAmount+TransferAmount) sales from receipt where memberID = '$memberID' GROUP BY branchID) b on hotdeal.BranchID = b.branchID where status = 1 and date_format(now(),'%Y-%m-%d') between date_format(startDate,'%Y-%m-%d') and date_format(endDate,'%Y-%m-%d') and (hotdeal.branchID in (select distinct branchID from receipt where memberID = '$memberID') or hotdeal.branchID = 0) order by HotDeal.branchID, a.frequency desc, b.sales DESC,hotDeal.modifiedDate desc;";
-    
+    $sql = "select * from (select @rownum := @rownum + 1 AS rank, c.* from (select promotionBranch.BranchID,Branch.Name BranchName,a.Frequency,b.Sales, promotion.* from promotion left join promotionbranch ON promotion.PromotionID = promotionbranch.PromotionID left join (select branchID,count(*) as Frequency from receipt where memberID = '$memberID' GROUP BY branchID) a on promotionbranch.BranchID = a.branchID left join (select branchID,SUM(CashAmount+CreditCardAmount+TransferAmount) Sales from receipt where memberID = '$memberID' GROUP BY branchID) b on promotionbranch.BranchID = b.branchID left join FFD.Branch on promotionBranch.BranchID = Branch.BranchID where promotion.status = 1 and date_format(now(),'%Y-%m-%d') between date_format(promotion.startDate,'%Y-%m-%d') and date_format(promotion.endDate,'%Y-%m-%d') and promotionbranch.BranchID in (select distinct branchID from receipt where memberID = '$memberID') order by promotion.Type,a.Frequency desc,b.Sales desc,promotion.OrderNo) c,(SELECT @rownum := 0) r)d where rank between '$startRow' and '$endRow';";
     
     /* execute multi query */
     $jsonEncode = executeMultiQuery($sql);

@@ -2,12 +2,12 @@
     include_once('dbConnect.php');
     setConnectionValue("JUMMUM2");
     $arrBody = array(
-                     'alert' => 'เทสจิ๋ว เอ'//ข้อความ
+                     'alert' => 'test'//ข้อความ
                       ,'sound' => 'default'//,//เสียงแจ้งเตือน
 //                      ,'badge' => 3 //ขึ้นข้อความตัวเลขที่ไม่ได้อ่าน
                      ,'category' => 'Print'
                       );
-    sendTestApplePushNotification('67dfa3d422c5dbe45becb82b3822c3b9108a4a91454f5935e51d5d189945aef4',$arrBody);
+    sendTestApplePushNotification('960c26760d284ad35a898d7a855c1de25e4e29aaa78235586134f1a5e0b07bd5',$arrBody);
     
 //    sleep(5);
 //

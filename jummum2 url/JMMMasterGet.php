@@ -36,11 +36,10 @@
     }
     else
     {
-        
+        $sqlCustomerTable = "select * from CustomerTable where 0";
     }
     $sql .= $sqlCustomerTable . ";";
     $sql .= "select * from JUMMUM3.setting;";
-    writeToLog("sql = " . $sql);
     
     
     

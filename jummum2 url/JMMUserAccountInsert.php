@@ -19,7 +19,7 @@
         $phoneNo = $_POST["phoneNo"];
         $lineID = $_POST["lineID"];
         $roleID = $_POST["roleID"];
-        $modifiedUser = $_POST["modifiedUser"];
+        $modifiedUser = $userAccountID;//$_POST["modifiedUser"];
         $modifiedDate = $_POST["modifiedDate"];
     }
     
@@ -45,7 +45,7 @@
     if($ret != "")
     {
         mysqli_rollback($con);
-        putAlertToDevice();
+//        putAlertToDevice();
         echo json_encode($ret);
         exit();
     }
