@@ -12,6 +12,11 @@
         $amount = $_POST["amount"];
     }
     
+    if(isset($_POST["promoCodeID"]))
+    {
+        $promoCodeID = $_POST["promoCodeID"];
+    }
+    
     
     if(isset($_POST["receiptID"]) && isset($_POST["branchID"]) && isset($_POST["customerTableID"]) && isset($_POST["memberID"]) && isset($_POST["servingPerson"]) && isset($_POST["customerType"]) && isset($_POST["openTableDate"]) && isset($_POST["cashAmount"]) && isset($_POST["cashReceive"]) && isset($_POST["creditCardType"]) && isset($_POST["creditCardNo"]) && isset($_POST["creditCardAmount"]) && isset($_POST["transferDate"]) && isset($_POST["transferAmount"]) && isset($_POST["remark"]) && isset($_POST["discountType"]) && isset($_POST["discountAmount"]) && isset($_POST["discountValue"]) && isset($_POST["discountReason"]) && isset($_POST["serviceChargePercent"]) && isset($_POST["serviceChargeValue"]) && isset($_POST["priceIncludeVat"]) && isset($_POST["vatPercent"]) && isset($_POST["vatValue"]) && isset($_POST["status"]) && isset($_POST["statusRoute"]) && isset($_POST["receiptNoID"]) && isset($_POST["receiptNoTaxID"]) && isset($_POST["receiptDate"]) && isset($_POST["mergeReceiptID"]) && isset($_POST["modifiedUser"]) && isset($_POST["modifiedDate"]))
     {
@@ -119,29 +124,36 @@
     
     
     
+    //omise part
+    if($amount != 0)
+    {
+        require_once  dirname(__FILE__) . '/omise-php/lib/Omise.php';
+        
+        
+        $sql = "select * from Setting where keyName = 'PublicKey'";
+        $selectedRow = getSelectedRow($sql);
+        $publicKey = $selectedRow[0]["Value"];
+        $sql = "select * from Setting where keyName = 'SecretKey'";
+        $selectedRow = getSelectedRow($sql);
+        $secretKey = $selectedRow[0]["Value"];
+        define('OMISE_PUBLIC_KEY', "$publicKey");
+        define('OMISE_SECRET_KEY', "$secretKey");
+        
+        
+        $charge = OmiseCharge::create(array(
+                                            'amount'   => $amount,
+                                            'currency' => 'THB',
+                                            'card'     => "$omiseToken"
+                                            ));
+        
+    }
+    else
+    {
+        $doReceiptProcess = 1;
+    }
     
-    require_once  dirname(__FILE__) . '/omise-php/lib/Omise.php';
     
-    
-    $sql = "select * from Setting where keyName = 'PublicKey'";
-    $selectedRow = getSelectedRow($sql);
-    $publicKey = $selectedRow[0]["Value"];
-    $sql = "select * from Setting where keyName = 'SecretKey'";
-    $selectedRow = getSelectedRow($sql);
-    $secretKey = $selectedRow[0]["Value"];
-    define('OMISE_PUBLIC_KEY', "$publicKey");
-    define('OMISE_SECRET_KEY', "$secretKey");
-    
-    
-    $charge = OmiseCharge::create(array(
-                                        'amount'   => $amount,
-                                        'currency' => 'THB',
-                                        'card'     => "$omiseToken"
-                                        ));
-    
-    
-    
-    if($charge["status"] == "successful")
+    if($doReceiptProcess || $charge["status"] == "successful")//omise status
     {
         // Check connection
         if (mysqli_connect_errno())
@@ -319,6 +331,19 @@
             {
                 //query statement
                 $sql = "INSERT INTO UserRewardRedemptionUsed(UserAccountID, RewardRedemptionID, ReceiptID, ModifiedUser, ModifiedDate) VALUES ('$prUserAccountID', '$prRewardRedemptionID', '$receiptID', '$prModifiedUser', '$prModifiedDate')";
+                $ret = doQueryTask($sql);
+                if($ret != "")
+                {
+                    mysqli_rollback($con);
+                    putAlertToDevice();
+                    echo json_encode($ret);
+                    exit();
+                }
+                
+                
+                
+                //query statement
+                $sql = "update promoCode set status = 2, modifiedUser = '$modifiedUser', modifiedDate = '$modifiedDate' where promoCodeID = '$promoCodeID'";
                 $ret = doQueryTask($sql);
                 if($ret != "")
                 {

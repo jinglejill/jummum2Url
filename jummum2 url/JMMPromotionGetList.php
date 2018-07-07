@@ -60,7 +60,7 @@
     
     if($voucherValid)
     {
-        $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') < date_format(startDate,'%Y-%m-%d');";
+        $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') < date_format(usingStartDate,'%Y-%m-%d');";
         $selectedRow = getSelectedRow($sql);
         if(sizeof($selectedRow) > 0)
         {
@@ -73,7 +73,7 @@
     
     if($voucherValid)
     {
-        $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') > date_format(endDate,'%Y-%m-%d');";
+        $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') > date_format(usingEndDate,'%Y-%m-%d');";
         $selectedRow = getSelectedRow($sql);
         if(sizeof($selectedRow) > 0)
         {
@@ -84,7 +84,7 @@
     }
     
     
-    $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') between date_format(startDate,'%Y-%m-%d') and date_format(endDate,'%Y-%m-%d');";
+    $sql = "select * from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') between date_format(usingStartDate,'%Y-%m-%d') and date_format(usingEndDate,'%Y-%m-%d');";
     $promotion = getSelectedRow($sql);
     $promotionID = $promotion[0]["PromotionID"];
     $noOfLimitUse = $promotion[0]["NoOfLimitUse"];
@@ -211,17 +211,28 @@
         $warningMsg2 = "";
         $voucherValid2 = 1;
         $currentDateTime = date('Y-m-d H:i:s');
-        $sql = "SELECT rewardRedemption.* FROM `rewardpoint` left join promoCode on rewardPoint.promoCodeID = promoCode.promoCodeID left join RewardRedemption on promocode.rewardRedemptionID = RewardRedemption.rewardRedemptionID WHERE MemberID = '$userAccountID' and rewardpoint.status = -1 and ((TIME_TO_SEC(timediff('$currentDateTime', rewardpoint.ModifiedDate)) < rewardredemption.WithInPeriod) or (rewardRedemption.WithInPeriod = 0 and '$currentDateTime'<rewardRedemption.usingEndDate)) and promoCode.Code = '$voucherCode'";
+        $sql = "SELECT rewardRedemption.*,promoCode.PromoCodeID FROM `rewardpoint` left join promoCode on rewardPoint.promoCodeID = promoCode.promoCodeID left join RewardRedemption on promocode.rewardRedemptionID = RewardRedemption.rewardRedemptionID WHERE MemberID = '$userAccountID' and rewardpoint.status = -1 and ((TIME_TO_SEC(timediff('$currentDateTime', rewardpoint.ModifiedDate)) < rewardredemption.WithInPeriod) or (rewardRedemption.WithInPeriod = 0 and '$currentDateTime'<rewardRedemption.usingEndDate)) and promoCode.Code = '$voucherCode' and promoCode.status = 1";
         $selectedRow = getSelectedRow($sql);
         $minimumSpending = $selectedRow[0]["MinimumSpending"];
         $maxDiscountAmountPerDay = $selectedRow[0]["MaxDiscountAmountPerDay"];
         $rewardRedemptionID = $selectedRow[0]["RewardRedemptionID"];
+        $promoCodeID = $selectedRow[0]["PromoCodeID"];
         if($voucherValid2)
         {
             if(sizeof($selectedRow)==0)
             {
-                $voucherValid2 = 0;
-                $warningMsg2 = "ไม่มี Voucher Code นี้";
+                $sql = "SELECT rewardRedemption.* FROM `rewardpoint` left join promoCode on rewardPoint.promoCodeID = promoCode.promoCodeID left join RewardRedemption on promocode.rewardRedemptionID = RewardRedemption.rewardRedemptionID WHERE MemberID = '$userAccountID' and rewardpoint.status = -1 and ((TIME_TO_SEC(timediff('$currentDateTime', rewardpoint.ModifiedDate)) < rewardredemption.WithInPeriod) or (rewardRedemption.WithInPeriod = 0 and '$currentDateTime'<rewardRedemption.usingEndDate)) and promoCode.Code = '$voucherCode' and promoCode.status = 2";
+                $selectedRow = getSelectedRow($sql);
+                if(sizeof($selectedRow)>0)
+                {
+                    $voucherValid2 = 0;
+                    $warningMsg2 = "Voucher Code นี้ใช้ไปแล้ว";
+                }
+                else
+                {
+                    $voucherValid2 = 0;
+                    $warningMsg2 = "ไม่มี Voucher Code นี้";
+                }
             }
         }
         
@@ -283,7 +294,7 @@
     
     if($voucherValid)
     {
-        $sql = "select *, $moreDiscountToGo as MoreDiscountToGo from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') between date_format(startDate,'%Y-%m-%d') and date_format(endDate,'%Y-%m-%d');";
+        $sql = "select promotion.*, $moreDiscountToGo as MoreDiscountToGo,0 PromoCodeID from promotion where voucherCode = '$voucherCode' and date_format(now(),'%Y-%m-%d') between date_format(usingStartDate,'%Y-%m-%d') and date_format(usingEndDate,'%Y-%m-%d');";
         $sql .= "select '' as Text;";
         $sql .= "select 1 as Text";
     }
@@ -297,7 +308,7 @@
     {
         if($voucherValid2)
         {
-            $sql = "select $moreDiscountToGo as MoreDiscountToGo,RewardRedemptionID,AllowDiscountForAllMenuType,DiscountType,DiscountAmount from rewardRedemption where rewardRedemptionID = '$rewardRedemptionID';";
+            $sql = "select $moreDiscountToGo as MoreDiscountToGo,RewardRedemptionID,AllowDiscountForAllMenuType,DiscountType,DiscountAmount,MainBranchID,DiscountMenuID,$promoCodeID PromoCodeID from rewardRedemption where rewardRedemptionID = '$rewardRedemptionID';";
             $sql .= "select '' as Text;";
             $sql .= "select 2 as Text";
         }
