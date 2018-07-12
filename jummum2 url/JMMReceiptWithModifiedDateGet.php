@@ -62,11 +62,12 @@
     
     
     
+    
     //receipt get
     $sql = "select * from receipt where receiptID = '$receiptID' and modifiedDate > '$modifiedDate';";
     //dispute get
     $sql .= "Select * from Dispute where receiptID = '$receiptID' and type = '$type';";
-    
+    $sql .= "select * from rating where receiptID = '$receiptID';";
     
     
     

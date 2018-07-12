@@ -67,37 +67,7 @@
         echo json_encode($ret);
         exit();
     }
-    
-    
-    switch($type)
-    {
-        case 1:
-        {
-            $status = 7;
-        }
-            break;
-        case 2:
-        {
-            $status = 8;
-        }
-            break;
-        case 3:
-        {
-            $status = 9;
-        }
-            break;
-        case 4:
-        {
-            $status = 10;
-        }
-            break;
-        case 5:
-        {
-            $status = 12;//12=jummum admin feedback to customer
-        }
-            break;
-    }
-    
+    $status = 8;
     
     
     
@@ -114,15 +84,15 @@
     
     
     
-    if($type == 1 || $type == 2 || $type == 5)
+//    if($type == 1 || $type == 2 || $type == 5)
     {
         //get pushSync Device in ffd
-        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
+        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti,AlarmShop from FFD.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDbName = $selectedRow[0]["DbName"];
         $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
         $urlNoti = $selectedRow[0]["UrlNoti"];
-        
+        $alarmShop = $selectedRow[0]["AlarmShop"];
 
     }
     
@@ -139,12 +109,20 @@
     
     //do script successful
     mysqli_commit($con);
-    if($type == 1 || $type == 2 || $type == 5)
+    
+    
+    /* execute multi query */
+    $sql = "select * from receipt where receiptID = '$receiptID';";
+    $sql .= "Select * from Dispute where receiptID = '$receiptID' and type = '$type';";
+    $dataJson = executeMultiQueryArray($sql);
     {
         $msg = $type == 1?"Order cancel request":$type == 2?"Open dispute request":"Review negotiation";
         sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'cancelOrder',0);
         //****************send noti to shop (turn on light)
-        alarmShop($urlNoti);
+        if($alarmShop == 1)
+        {
+            alarmShop($urlNoti);
+        }
         //****************
     }
     
@@ -154,7 +132,7 @@
     
     mysqli_close($con);
     writeToLog("query commit, file: " . basename(__FILE__) . ", user: " . $_POST['modifiedUser']);
-    $response = array('status' => '1', 'sql' => $sql);
+    $response = array('status' => '1', 'sql' => $sql, 'tableName' => 'Receipt', 'dataJson' => $dataJson);
     echo json_encode($response);
     exit();
 ?>

@@ -27,7 +27,7 @@
     
     $sql = "select * from $dbNameBranch.menu where Status = 1;";
     $sql .= "select * from $dbNameBranch.menuType where Status = 1;";
-    $sql .= "select * from $dbNameBranch.menuTypeNote;";
+    $sql .= "select * from $dbNameBranch.menuNote;";
     $sql .= "select * from $dbNameBranch.note where Status = 1;";
     $sql .= "select * from $dbNameBranch.notetype where Status = 1;";
     $sql .= "select * from $dbNameBranch.subMenuType where Status = 1;";

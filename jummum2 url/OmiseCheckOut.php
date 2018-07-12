@@ -390,12 +390,12 @@
         
         //insert into pushsync of db branchID
         //-----****************************
-        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti from FFD.branch where branchID = '$branchID'";
+        $sql = "select DbName,DeviceTokenReceiveOrder,UrlNoti,AlarmShop from FFD.branch where branchID = '$branchID'";
         $selectedRow = getSelectedRow($sql);
         $pushSyncDbName = $selectedRow[0]["DbName"];
         $pushSyncDeviceTokenReceiveOrder = $selectedRow[0]["DeviceTokenReceiveOrder"];
         $urlNoti = $selectedRow[0]["UrlNoti"];
-        
+        $alarmShop = $selectedRow[0]["AlarmShop"];
     
         
         
@@ -493,7 +493,10 @@
         mysqli_commit($con);
         sendPushNotificationToDeviceWithPath($pushSyncDeviceTokenReceiveOrder,'./../../JMM/JUMMUMSHOP/','jill',$msg,$receiptID,'printKitchenBill',1);
         //****************send noti to shop (turn on light)
-        alarmShop($urlNoti);
+        if($alarmShop == 1)
+        {
+            alarmShop($urlNoti);
+        }
         //****************
         mysqli_close($con);
         
