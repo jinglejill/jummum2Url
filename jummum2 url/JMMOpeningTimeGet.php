@@ -31,7 +31,7 @@
     
     
     
-    $sql = "select * from FFD.branch where branchID = '$branchID'";
+    $sql = "select * from OM.branch where branchID = '$branchID'";
     $selectedRow = getSelectedRow($sql);
     $selectedDbName = $selectedRow[0]["DbName"];
     

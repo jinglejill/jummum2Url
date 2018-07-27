@@ -14,7 +14,7 @@
     }
     
     
-    $sql = "select * from FFD.branch where DbName = '$dbNameBranch'";
+    $sql = "select * from OM.branch where DbName = '$dbNameBranch'";
     $selectedRow = getSelectedRow($sql);
     $branchID = $selectedRow[0]["BranchID"];
     $sql = "select '$branchID' BranchID, customerTable.* from customerTable where Status = 1;";

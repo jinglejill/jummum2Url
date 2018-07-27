@@ -1,7 +1,7 @@
 <?php
     include_once("dbConnect.php");
 //    setConnectionValue($_POST["dbName"]);
-    setConnectionValue("FFD");
+    setConnectionValue("OM");
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
     ini_set("memory_limit","-1");
@@ -16,7 +16,7 @@
     
     
     //select table -> branch, customerTable
-    $sql = "SELECT * FROM FFD.Branch where status = 1 and customerApp = 1;";
+    $sql = "SELECT * FROM OM.Branch where status = 1 and customerApp = 1;";
 
     
 

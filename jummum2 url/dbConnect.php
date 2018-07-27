@@ -220,7 +220,7 @@
         
         
         // Create connection
-        $con=mysqli_connect("localhost","FFD","123456",$dbName);
+        $con=mysqli_connect("localhost","JUMMUM","123456",$dbName);
         
         
         $timeZone = mysqli_query($con,"SET SESSION time_zone = '+07:00'");
@@ -765,7 +765,7 @@
         
 
         $ctx = stream_context_create();
-        stream_context_set_option($ctx, 'ssl', 'local_cert', "$path".'ck.pem');//./../../FFD/MAMARIN5/
+        stream_context_set_option($ctx, 'ssl', 'local_cert', "$path".'ck.pem');
         stream_context_set_option($ctx, 'ssl', 'passphrase', $pass);
         
         

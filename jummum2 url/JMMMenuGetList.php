@@ -14,23 +14,18 @@
     }
     
     
-    $sql = "select * from FFD.branch where dbName = '$dbNameBranch'";
+    $sql = "select * from OM.branch where dbName = '$dbNameBranch'";
     $selectedRow = getSelectedRow($sql);
     if($selectedRow[0]["BranchID"] != $selectedRow[0]["MainBranchID"])
     {
         $mainBranchID = $selectedRow[0]["MainBranchID"];
-        $sql = "select * from FFD.branch where branchID = '$mainBranchID'";
+        $sql = "select * from OM.branch where branchID = '$mainBranchID'";
         $selectedRow = getSelectedRow($sql);
         $dbNameBranch = $selectedRow[0]["DbName"];
     }
     
     
-    
-//    $sql = "select * from FFD.branch where branchID = '$branchID'";
-//    $selectedRow = getSelectedRow($sql);
-//    $selectedDbName = $selectedRow[0]["DbName"];
-    
-    
+
     
     $inOpeningTime = 0;
     $sql = "select * from $dbNameBranch.Setting where keyName = 'customerOrderStatus'";

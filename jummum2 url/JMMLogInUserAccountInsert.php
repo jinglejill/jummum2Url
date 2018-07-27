@@ -125,7 +125,7 @@
         
         $menuID = $selectedRow[0]["MenuID"];
         $branchID = $selectedRow[0]["BranchID"];
-        $sql2 = "select * from FFD.branch where branchID = '$branchID'";
+        $sql2 = "select * from OM.branch where branchID = '$branchID'";
         $selectedRow2 = getSelectedRow($sql2);
         $eachDbName = $selectedRow2[0]["DbName"];
         $mainBranchID = $selectedRow2[0]["MainBranchID"];
@@ -135,7 +135,7 @@
         }
         else
         {
-            $sql2 = "select * from FFD.branch where branchID = '$mainBranchID'";
+            $sql2 = "select * from OM.branch where branchID = '$mainBranchID'";
             $selectedRow2 = getSelectedRow($sql2);
             $eachDbName = $selectedRow2[0]["DbName"];
             $mainBranchID = $selectedRow2[0]["MainBranchID"];
@@ -145,7 +145,7 @@
         {
             $menuID = $selectedRow[$i]["MenuID"];
             $branchID = $selectedRow[$i]["BranchID"];
-            $sql2 = "select * from FFD.branch where branchID = '$branchID'";
+            $sql2 = "select * from OM.branch where branchID = '$branchID'";
             $selectedRow2 = getSelectedRow($sql2);
             $eachDbName = $selectedRow2[0]["DbName"];
             $mainBranchID = $selectedRow2[0]["MainBranchID"];
@@ -155,7 +155,7 @@
             }
             else
             {
-                $sql2 = "select * from FFD.branch where branchID = '$mainBranchID'";
+                $sql2 = "select * from OM.branch where branchID = '$mainBranchID'";
                 $selectedRow2 = getSelectedRow($sql2);
                 $eachDbName = $selectedRow2[0]["DbName"];
                 $mainBranchID = $selectedRow2[0]["MainBranchID"];

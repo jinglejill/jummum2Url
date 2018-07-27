@@ -51,7 +51,7 @@
             
             $menuID = $selectedRow[0]["MenuID"];
             $branchID = $selectedRow[0]["BranchID"];
-            $sql2 = "select * from FFD.branch where branchID = '$branchID'";
+            $sql2 = "select * from OM.branch where branchID = '$branchID'";
             $selectedRow2 = getSelectedRow($sql2);
             $eachDbName = $selectedRow2[0]["DbName"];
             $sql4 = "select '$branchID' BranchID, Menu.* from $eachDbName.Menu where menuID = '$menuID'";
@@ -59,7 +59,7 @@
             {
                 $menuID = $selectedRow[$i]["MenuID"];
                 $branchID = $selectedRow[$i]["BranchID"];
-                $sql2 = "select * from FFD.branch where branchID = '$branchID'";
+                $sql2 = "select * from OM.branch where branchID = '$branchID'";
                 $selectedRow2 = getSelectedRow($sql2);
                 $eachDbName = $selectedRow2[0]["DbName"];
                 $sql4 .= " union select '$branchID' BranchID, Menu.* from $eachDbName.Menu where menuID = '$menuID'";

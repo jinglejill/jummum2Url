@@ -125,7 +125,7 @@
     
     
     //validate shop opening time*******************
-    $sql = "select * from FFD.branch where branchID = '$branchID'";
+    $sql = "select * from OM.branch where branchID = '$branchID'";
     $selectedRow = getSelectedRow($sql);
     $selectedDbName = $selectedRow[0]["DbName"];
     
@@ -467,9 +467,9 @@
         
         //insert into pushsync of db branchID
         //-----****************************
-        //get pushSync Device in ffd
+        //get pushSync Device in OM
         $pushSyncDeviceTokenReceiveOrder = array();
-        $sql = "select * from FFD.device left join FFD.Branch on FFD.device.DbName = FFD.Branch.DbName where branchID = '$branchID';";
+        $sql = "select * from OM.device left join OM.Branch on OM.device.DbName = OM.Branch.DbName where branchID = '$branchID';";
         $selectedRow = getSelectedRow($sql);
         for($i=0; $i<sizeof($selectedRow); $i++)
         {
@@ -503,7 +503,7 @@
             //alarmShop
             //query statement
             $ledStatus = 1;
-            $sql = "update FFD.Branch set LedStatus = '$ledStatus', ModifiedUser = '$modifiedUser', ModifiedDate = '$modifiedDate' where branchID = '$branchID';";
+            $sql = "update OM.Branch set LedStatus = '$ledStatus', ModifiedUser = '$modifiedUser', ModifiedDate = '$modifiedDate' where branchID = '$branchID';";
             $ret = doQueryTask($sql);
             if($ret != "")
             {
