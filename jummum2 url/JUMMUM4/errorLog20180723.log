@@ -1,0 +1,218 @@
+2018-07-23T11:13:55+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180f4bc9c _CFArgv   0
+3   CoreFoundation                      0x0000000180e7eeec <redacted>   1420
+4   Jummum2                             0x00000001028df080  [Menu getMenuListWithOrderTakingList:]   704
+5   Jummum2                             0x00000001028059c4 -[BasketViewController loadView]   196
+6   UIKit                               0x000000018a56d6a8 <redacted>   184
+7   UIKit                               0x000000018a56d5d8 <redacted>   28
+8   UIKit                               0x000000018b116d24 <redacted>   92
+9   UIKit                               0x000000018a8b5a18 <redacted>   140
+10  UIKit                               0x000000018a8e684c <redacted>   2676
+11  UIKit                               0x000000018a8e976c <redacted>   104
+12  UIKit                               0x000000018a8e9ca0 <redacted>   528
+13  UIKit                               0x000000018a8e96bc <redacted>   188
+14  UIKit                               0x000000018a64b2d0 <redacted>   160
+15  UIKit                               0x000000018a8ed578 <redacted>   272
+16  UIKit                               0x000000018ad23c64 <redacted>   148
+17  UIKit                               0x000000018ae930b0 <redacted>   296
+18  UIKit                               0x000000018ae92f54 <redacted>   92
+19  UIKit                               0x000000018a8dd870 <redacted>   108
+20  Jummum2                             0x0000000102827fa0 -[MenuSelectionViewController viewBasket:]   160
+21  UIKit                               0x000000018a5a25cc <redacted>   96
+22  UIKit                               0x000000018a5a254c <redacted>   80
+23  UIKit                               0x000000018a58d0f4 <redacted>   440
+24  UIKit                               0x000000018a5a1e40 <redacted>   576
+25  UIKit                               0x000000018abfd5e4 <redacted>   4280
+26  UIKit                               0x000000018abf8b94 <redacted>   1224
+27  CoreFoundation                      0x0000000180f5acdc <redacted>   32
+28  CoreFoundation                      0x0000000180f58694 <redacted>   412
+29  CoreFoundation                      0x0000000180f58c50 <redacted>   1292
+30  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+31  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+32  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+33  Jummum2                             0x00000001028595f8 main   124
+34  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-23T11:17:24+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180f4bc9c _CFArgv   0
+3   CoreFoundation                      0x0000000180e7eeec <redacted>   1420
+4   Jummum2                             0x0000000102167080  [Menu getMenuListWithOrderTakingList:]   704
+5   Jummum2                             0x000000010208d9c4 -[BasketViewController loadView]   196
+6   UIKit                               0x000000018a56d6a8 <redacted>   184
+7   UIKit                               0x000000018a56d5d8 <redacted>   28
+8   UIKit                               0x000000018b116d24 <redacted>   92
+9   UIKit                               0x000000018a8b5a18 <redacted>   140
+10  UIKit                               0x000000018a8e684c <redacted>   2676
+11  UIKit                               0x000000018a8e976c <redacted>   104
+12  UIKit                               0x000000018a8e9ca0 <redacted>   528
+13  UIKit                               0x000000018a8e96bc <redacted>   188
+14  UIKit                               0x000000018a64b2d0 <redacted>   160
+15  UIKit                               0x000000018a8ed578 <redacted>   272
+16  UIKit                               0x000000018ad23c64 <redacted>   148
+17  UIKit                               0x000000018ae930b0 <redacted>   296
+18  UIKit                               0x000000018ae92f54 <redacted>   92
+19  UIKit                               0x000000018a8dd870 <redacted>   108
+20  Jummum2                             0x00000001020affa0 -[MenuSelectionViewController viewBasket:]   160
+21  UIKit                               0x000000018a5a25cc <redacted>   96
+22  UIKit                               0x000000018a5a254c <redacted>   80
+23  UIKit                               0x000000018a58d0f4 <redacted>   440
+24  UIKit                               0x000000018a5a1e40 <redacted>   576
+25  UIKit                               0x000000018abfd5e4 <redacted>   4280
+26  UIKit                               0x000000018abf8b94 <redacted>   1224
+27  CoreFoundation                      0x0000000180f5acdc <redacted>   32
+28  CoreFoundation                      0x0000000180f58694 <redacted>   412
+29  CoreFoundation                      0x0000000180f58c50 <redacted>   1292
+30  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+31  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+32  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+33  Jummum2                             0x00000001020e15f8 main   124
+34  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-23T11:19:07+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180f4bc9c _CFArgv   0
+3   CoreFoundation                      0x0000000180e7eeec <redacted>   1420
+4   Jummum2                             0x0000000100a6f080  [Menu getMenuListWithOrderTakingList:]   704
+5   Jummum2                             0x00000001009959c4 -[BasketViewController loadView]   196
+6   UIKit                               0x000000018a56d6a8 <redacted>   184
+7   UIKit                               0x000000018a56d5d8 <redacted>   28
+8   UIKit                               0x000000018b116d24 <redacted>   92
+9   UIKit                               0x000000018a8b5a18 <redacted>   140
+10  UIKit                               0x000000018a8e684c <redacted>   2676
+11  UIKit                               0x000000018a8e976c <redacted>   104
+12  UIKit                               0x000000018a8e9ca0 <redacted>   528
+13  UIKit                               0x000000018a8e96bc <redacted>   188
+14  UIKit                               0x000000018a64b2d0 <redacted>   160
+15  UIKit                               0x000000018a8ed578 <redacted>   272
+16  UIKit                               0x000000018ad23c64 <redacted>   148
+17  UIKit                               0x000000018ae930b0 <redacted>   296
+18  UIKit                               0x000000018ae92f54 <redacted>   92
+19  UIKit                               0x000000018a8dd870 <redacted>   108
+20  Jummum2                             0x00000001009b7fa0 -[MenuSelectionViewController viewBasket:]   160
+21  UIKit                               0x000000018a5a25cc <redacted>   96
+22  UIKit                               0x000000018a5a254c <redacted>   80
+23  UIKit                               0x000000018a58d0f4 <redacted>   440
+24  UIKit                               0x000000018a5a1e40 <redacted>   576
+25  UIKit                               0x000000018abfd5e4 <redacted>   4280
+26  UIKit                               0x000000018abf8b94 <redacted>   1224
+27  CoreFoundation                      0x0000000180f5acdc <redacted>   32
+28  CoreFoundation                      0x0000000180f58694 <redacted>   412
+29  CoreFoundation                      0x0000000180f58c50 <redacted>   1292
+30  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+31  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+32  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+33  Jummum2                             0x00000001009e95f8 main   124
+34  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-23T11:37:36+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+-[Menu text]: unrecognized selector sent to instance 0x1c415ef00
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180fc0628 <redacted>   0
+3   CoreFoundation                      0x0000000180fb8b10 <redacted>   1380
+4   CoreFoundation                      0x0000000180e9dccc _CF_forwarding_prep_0   92
+5   Jummum2                             0x00000001029be130 -[MenuSelectionViewController itemsDownloaded:manager:]   288
+6   Jummum2                             0x0000000102973594 -[HomeModel URLSession:dataTask:didReceiveData:]   4456
+7   CFNetwork                           0x00000001816ef970 <redacted>   36
+8   Foundation                          0x0000000181989ba0 <redacted>   16
+9   Foundation                          0x00000001818c9894 <redacted>   72
+10  Foundation                          0x00000001818b94c4 <redacted>   848
+11  libdispatch.dylib                   0x0000000103a4528c _dispatch_client_callout   16
+12  libdispatch.dylib                   0x0000000103a519e4 _dispatch_block_invoke_direct   268
+13  libdispatch.dylib                   0x0000000103a4528c _dispatch_client_callout   16
+14  libdispatch.dylib                   0x0000000103a519e4 _dispatch_block_invoke_direct   268
+15  libdispatch.dylib                   0x0000000103a518a4 dispatch_block_perform   104
+16  Foundation                          0x000000018198b878 <redacted>   376
+17  libdispatch.dylib                   0x0000000103a4528c _dispatch_client_callout   16
+18  libdispatch.dylib                   0x0000000103a49ea0 _dispatch_main_queue_callback_4CF   1196
+19  CoreFoundation                      0x0000000180f5b344 <redacted>   12
+20  CoreFoundation                      0x0000000180f58f20 <redacted>   2012
+21  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+22  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+23  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+24  Jummum2                             0x00000001029ed5f8 main   124
+25  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-23T11:43:02+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+[<Message 0x1c400c2b0> valueForUndefinedKey:]: this class is not key value coding-compliant for the key messageID.
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180fb2e2c <redacted>   0
+3   Foundation                          0x0000000181966434 <redacted>   248
+4   Foundation                          0x00000001818ace20 <redacted>   264
+5   Jummum2                             0x0000000102576d90  [Utility duplicate:]   700
+6   Jummum2                             0x000000010257ac3c  [Utility addToSharedDataList:]   728
+7   Jummum2                             0x00000001025edb30 -[CreditCardAndOrderSummaryViewController itemsInsertedWithReturnData:]   420
+8   Jummum2                             0x0000000102564820 __47-[HomeModel insertItems:withData:actionScreen:]_block_invoke   2592
+9   CFNetwork                           0x000000018153dd68 <redacted>   32
+10  CFNetwork                           0x00000001815566bc <redacted>   152
+11  Foundation                          0x0000000181989ba0 <redacted>   16
+12  Foundation                          0x00000001818c9894 <redacted>   72
+13  Foundation                          0x00000001818b94c4 <redacted>   848
+14  libdispatch.dylib                   0x000000010368128c _dispatch_client_callout   16
+15  libdispatch.dylib                   0x000000010368d9e4 _dispatch_block_invoke_direct   268
+16  libdispatch.dylib                   0x000000010368128c _dispatch_client_callout   16
+17  libdispatch.dylib                   0x000000010368d9e4 _dispatch_block_invoke_direct   268
+18  libdispatch.dylib                   0x000000010368d8a4 dispatch_block_perform   104
+19  Foundation                          0x000000018198b878 <redacted>   376
+20  libdispatch.dylib                   0x000000010368128c _dispatch_client_callout   16
+21  libdispatch.dylib                   0x0000000103685ea0 _dispatch_main_queue_callback_4CF   1196
+22  CoreFoundation                      0x0000000180f5b344 <redacted>   12
+23  CoreFoundation                      0x0000000180f58f20 <redacted>   2012
+24  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+25  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+26  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+27  Jummum2                             0x00000001025d55f8 main   124
+28  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-23T11:48:30+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+*** -[__NSArrayM insertObject:atIndex:]: object cannot be nil
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180f4bc9c _CFArgv   0
+3   CoreFoundation                      0x0000000180e7eeec <redacted>   1420
+4   Jummum2                             0x0000000104873080  [Menu getMenuListWithOrderTakingList:]   704
+5   Jummum2                             0x000000010479986c -[BasketViewController loadView]   196
+6   UIKit                               0x000000018a56d6a8 <redacted>   184
+7   UIKit                               0x000000018a56d5d8 <redacted>   28
+8   UIKit                               0x000000018b116d24 <redacted>   92
+9   UIKit                               0x000000018a8b5a18 <redacted>   140
+10  UIKit                               0x000000018a8e684c <redacted>   2676
+11  UIKit                               0x000000018a8e976c <redacted>   104
+12  UIKit                               0x000000018a8e9ca0 <redacted>   528
+13  UIKit                               0x000000018a8e96bc <redacted>   188
+14  UIKit                               0x000000018a64b2d0 <redacted>   160
+15  UIKit                               0x000000018a8ed578 <redacted>   272
+16  UIKit                               0x000000018ad23c64 <redacted>   148
+17  UIKit                               0x000000018ae930b0 <redacted>   296
+18  UIKit                               0x000000018ae92f54 <redacted>   92
+19  UIKit                               0x000000018a8dd870 <redacted>   108
+20  Jummum2                             0x00000001047bbe48 -[MenuSelectionViewController viewBasket:]   160
+21  UIKit                               0x000000018a5a25cc <redacted>   96
+22  UIKit                               0x000000018a5a254c <redacted>   80
+23  UIKit                               0x000000018a58d0f4 <redacted>   440
+24  UIKit                               0x000000018a5a1e40 <redacted>   576
+25  UIKit                               0x000000018a5a1960 <redacted>   2544
+26  UIKit                               0x000000018a59ce78 <redacted>   3208
+27  UIKit                               0x000000018a56de7c <redacted>   340
+28  UIKit                               0x000000018aec330c <redacted>   2364
+29  UIKit                               0x000000018aec5898 <redacted>   4760
+30  UIKit                               0x000000018aebe7b0 <redacted>   152
+31  CoreFoundation                      0x0000000180f5b77c <redacted>   24
+32  CoreFoundation                      0x0000000180f5b6fc <redacted>   88
+33  CoreFoundation                      0x0000000180f5af84 <redacted>   204
+34  CoreFoundation                      0x0000000180f58b5c <redacted>   1048
+35  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+36  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+37  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+38  Jummum2                             0x00000001047ed5f4 main   124
+39  libdyld.dylib                       0x000000018099856c <redacted>   4

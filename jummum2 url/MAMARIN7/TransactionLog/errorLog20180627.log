@@ -1,0 +1,77 @@
+2018-06-27T00:21:12+07:00 
+fail with exception: jinglejill@hotmail.com,simulator
+*** -[__NSArrayM objectAtIndexedSubscript:]: index 0 beyond bounds for empty array
+0   CoreFoundation                      0x00000001058391e6 __exceptionPreprocess   294
+1   libobjc.A.dylib                     0x0000000104a85031 objc_exception_throw   48
+2   CoreFoundation                      0x00000001058790bc _CFThrowFormattedException   194
+3   CoreFoundation                      0x000000010586a796 -[__NSArrayM objectAtIndexedSubscript:]   150
+4   JummumShop                          0x00000001006e5d7b -[DisputeFormViewController itemsDownloaded:]   459
+5   JummumShop                          0x0000000100656260 -[HomeModel URLSession:dataTask:didReceiveData:]   4816
+6   CFNetwork                           0x00000001095d6326 __67-[NSURLSession delegate_dataTask:didReceiveData:completionHandler:]_block_invoke.264   38
+7   Foundation                          0x0000000101cbc363 __NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__   7
+8   Foundation                          0x0000000101cbc1ca -[NSBlockOperation main]   68
+9   Foundation                          0x0000000101cba6b2 -[__NSOperationInternal _start:]   766
+10  libdispatch.dylib                   0x0000000108b117ec _dispatch_client_callout   8
+11  libdispatch.dylib                   0x0000000108b16db8 _dispatch_block_invoke_direct   592
+12  libdispatch.dylib                   0x0000000108b117ec _dispatch_client_callout   8
+13  libdispatch.dylib                   0x0000000108b16db8 _dispatch_block_invoke_direct   592
+14  libdispatch.dylib                   0x0000000108b16b48 dispatch_block_perform   109
+15  Foundation                          0x0000000101cb675b __NSOQSchedule_f   337
+16  libdispatch.dylib                   0x0000000108b117ec _dispatch_client_callout   8
+17  libdispatch.dylib                   0x0000000108b1c8cf _dispatch_main_queue_callback_4CF   628
+18  CoreFoundation                      0x00000001057fbc99 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__   9
+19  CoreFoundation                      0x00000001057bfea6 __CFRunLoopRun   2342
+20  CoreFoundation                      0x00000001057bf30b CFRunLoopRunSpecific   635
+21  GraphicsServices                    0x00000001083cda73 GSEventRunModal   62
+22  UIKit                               0x0000000102892057 UIApplicationMain   159
+23  JummumShop                          0x00000001006e09af main   111
+24  libdyld.dylib                       0x0000000108b8e955 start   1
+25  ???                                 0x0000000000000001 0x0   1
+2018-06-27T00:25:01+07:00 
+fail with exception: jinglejill@hotmail.com,simulator
+*** -[__NSArrayM objectAtIndexedSubscript:]: index 0 beyond bounds for empty array
+0   CoreFoundation                      0x000000010b5f11e6 __exceptionPreprocess   294
+1   libobjc.A.dylib                     0x000000010a83d031 objc_exception_throw   48
+2   CoreFoundation                      0x000000010b6310bc _CFThrowFormattedException   194
+3   CoreFoundation                      0x000000010b622796 -[__NSArrayM objectAtIndexedSubscript:]   150
+4   JummumShop                          0x000000010649dd4b -[DisputeFormViewController itemsDownloaded:]   459
+5   JummumShop                          0x000000010640e230 -[HomeModel URLSession:dataTask:didReceiveData:]   4816
+6   CFNetwork                           0x000000010f5e3326 __67-[NSURLSession delegate_dataTask:didReceiveData:completionHandler:]_block_invoke.264   38
+7   Foundation                          0x0000000107a74363 __NSBLOCKOPERATION_IS_CALLING_OUT_TO_A_BLOCK__   7
+8   Foundation                          0x0000000107a741ca -[NSBlockOperation main]   68
+9   Foundation                          0x0000000107a726b2 -[__NSOperationInternal _start:]   766
+10  libdispatch.dylib                   0x000000010e8c97ec _dispatch_client_callout   8
+11  libdispatch.dylib                   0x000000010e8cedb8 _dispatch_block_invoke_direct   592
+12  libdispatch.dylib                   0x000000010e8c97ec _dispatch_client_callout   8
+13  libdispatch.dylib                   0x000000010e8cedb8 _dispatch_block_invoke_direct   592
+14  libdispatch.dylib                   0x000000010e8ceb48 dispatch_block_perform   109
+15  Foundation                          0x0000000107a6e75b __NSOQSchedule_f   337
+16  libdispatch.dylib                   0x000000010e8c97ec _dispatch_client_callout   8
+17  libdispatch.dylib                   0x000000010e8d48cf _dispatch_main_queue_callback_4CF   628
+18  CoreFoundation                      0x000000010b5b3c99 __CFRUNLOOP_IS_SERVICING_THE_MAIN_DISPATCH_QUEUE__   9
+19  CoreFoundation                      0x000000010b577ea6 __CFRunLoopRun   2342
+20  CoreFoundation                      0x000000010b57730b CFRunLoopRunSpecific   635
+21  GraphicsServices                    0x000000010e185a73 GSEventRunModal   62
+22  UIKit                               0x000000010864a057 UIApplicationMain   159
+23  JummumShop                          0x000000010649897f main   111
+24  libdyld.dylib                       0x000000010e946955 start   1
+25  ???                                 0x0000000000000001 0x0   1
+2018-06-27T01:43:15+07:00 
+fail with exception: jinglejill@hotmail.com,d077c2b81fbb7ab3a574ca8a45ace253b293910ec6d5c16e7213b30661dff911
+-[DisputeFormViewController unwindToReceiptSummary]: unrecognized selector sent to instance 0x1020aa800
+0   CoreFoundation                      0x0000000185e7637c <redacted>   148
+1   libobjc.A.dylib                     0x00000001850bc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000185e83828 <redacted>   0
+3   UIKit                               0x000000018f7ed21c <redacted>   296
+4   CoreFoundation                      0x0000000185e7bd10 <redacted>   1380
+5   CoreFoundation                      0x0000000185d60ecc _CF_forwarding_prep_0   92
+6   Foundation                          0x000000018685bd58 __NSFireDelayedPerform   412
+7   CoreFoundation                      0x0000000185e1efc0 <redacted>   28
+8   CoreFoundation                      0x0000000185e1ece4 <redacted>   864
+9   CoreFoundation                      0x0000000185e1e4e4 <redacted>   248
+10  CoreFoundation                      0x0000000185e1c0cc <redacted>   1928
+11  CoreFoundation                      0x0000000185d3be58 CFRunLoopRunSpecific   436
+12  GraphicsServices                    0x0000000187be8f84 GSEventRunModal   100
+13  UIKit                               0x000000018f49067c UIApplicationMain   236
+14  JummumShop                          0x00000001004529b4 main   124
+15  libdyld.dylib                       0x000000018585856c <redacted>   4

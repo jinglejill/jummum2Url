@@ -1,0 +1,43 @@
+2018-07-20T00:02:48+07:00 fail with exception: appVersion no resultCount
+2018-07-20T00:23:11+07:00 fail with exception: appVersion no resultCount
+2018-07-20T00:29:05+07:00 fail with exception: appVersion no resultCount
+2018-07-20T01:47:51+07:00 fail with exception: appVersion no resultCount
+2018-07-20T01:49:26+07:00 fail with exception: appVersion no resultCount
+2018-07-20T02:30:17+07:00 fail with exception: appVersion no resultCount
+2018-07-20T02:31:44+07:00 fail with exception: appVersion no resultCount
+2018-07-20T03:02:00+07:00 fail with exception: appVersion no resultCount
+2018-07-20T03:35:36+07:00 fail with exception: appVersion no resultCount
+2018-07-20T03:41:31+07:00 fail with exception: appVersion no resultCount
+2018-07-20T03:41:52+07:00 fail with exception: appVersion no resultCount
+2018-07-20T10:03:27+07:00 fail with exception: appVersion no resultCount
+2018-07-20T10:59:30+07:00 
+fail with exception: jinglejill@hotmail.com,(null)
+-[__NSCFString count]: unrecognized selector sent to instance 0x1c443e900
+0   CoreFoundation                      0x0000000180fb317c <redacted>   148
+1   libobjc.A.dylib                     0x00000001801fc528 objc_exception_throw   56
+2   CoreFoundation                      0x0000000180fc0628 <redacted>   0
+3   CoreFoundation                      0x0000000180fb8b10 <redacted>   1380
+4   CoreFoundation                      0x0000000180e9dccc _CF_forwarding_prep_0   92
+5   Jummum2                             0x0000000102d676f4  [Utility jsonToArray:arrClassName:]   168
+6   Jummum2                             0x0000000102d56c30 __47-[HomeModel updateItems:withData:actionScreen:]_block_invoke   748
+7   CFNetwork                           0x000000018153dd68 <redacted>   32
+8   CFNetwork                           0x00000001815566bc <redacted>   152
+9   Foundation                          0x0000000181989ba0 <redacted>   16
+10  Foundation                          0x00000001818c9894 <redacted>   72
+11  Foundation                          0x00000001818b94c4 <redacted>   848
+12  libdispatch.dylib                   0x0000000180932a14 <redacted>   16
+13  libdispatch.dylib                   0x000000018093a200 <redacted>   288
+14  libdispatch.dylib                   0x0000000180932a14 <redacted>   16
+15  libdispatch.dylib                   0x000000018093a200 <redacted>   288
+16  libdispatch.dylib                   0x000000018093a0ac <redacted>   104
+17  Foundation                          0x000000018198b878 <redacted>   376
+18  libdispatch.dylib                   0x0000000180932a14 <redacted>   16
+19  libdispatch.dylib                   0x000000018093f698 <redacted>   1016
+20  CoreFoundation                      0x0000000180f5b344 <redacted>   12
+21  CoreFoundation                      0x0000000180f58f20 <redacted>   2012
+22  CoreFoundation                      0x0000000180e78c58 CFRunLoopRunSpecific   436
+23  GraphicsServices                    0x0000000182d24f84 GSEventRunModal   100
+24  UIKit                               0x000000018a5d15c4 UIApplicationMain   236
+25  Jummum2                             0x0000000102dc63c0 main   124
+26  libdyld.dylib                       0x000000018099856c <redacted>   4
+2018-07-20T10:59:30+07:00 fail with exception: appVersion no resultCount
