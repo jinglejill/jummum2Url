@@ -134,7 +134,7 @@
     $inOpeningTime = 0;
     $sql = "select * from $selectedDbName.Setting where keyName = 'customerOrderStatus'";
     $selectedRow = getSelectedRow($sql);
-    $customerOrderStatus = $selectedRow[0]["CustomerOrderStatus"];
+    $customerOrderStatus = $selectedRow[0]["Value"];
     if($customerOrderStatus == 1)
     {
         $inOpeningTime = 1;
@@ -474,7 +474,7 @@
         for($i=0; $i<sizeof($selectedRow); $i++)
         {
             $deviceToken = $selectedRow[$i]["DeviceToken"];
-            array_push($pushSyncDeviceTokenReceiveOrder,deviceToken);
+            array_push($pushSyncDeviceTokenReceiveOrder,$deviceToken);
         }
         //-----****************************
         

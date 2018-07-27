@@ -1,13 +1,5 @@
 <?php
     include_once("dbConnect.php");
-    if($_GET["dbName"])
-    {
-        $_POST["dbName"] = $_GET["dbName"];
-    }
-    if($_GET["branchID"])
-    {
-        $_POST["branchID"] = $_GET["branchID"];
-    }
     setConnectionValue($_POST["dbName"]);
     writeToLog("file: " . basename(__FILE__) . ", user: " . $_POST["modifiedUser"]);
     printAllPost();
@@ -40,7 +32,7 @@
     $inOpeningTime = 0;
     $sql = "select * from $selectedDbName.Setting where keyName = 'customerOrderStatus'";
     $selectedRow = getSelectedRow($sql);
-    $customerOrderStatus = $selectedRow[0]["CustomerOrderStatus"];
+    $customerOrderStatus = $selectedRow[0]["Value"];
     if($customerOrderStatus == 1)
     {
         $inOpeningTime = 1;
@@ -82,26 +74,7 @@
                 $nextDate = date("Y-m-d", strtotime($strDate. ' + 1 days'));
                 $startDate = date($strDate . " " . $startTime . ":00");
                 $endDate = date($nextDate . " " . $endTime . ":00");
-                echo "startDate: " . $startDate . "<br>";
-                echo "endDate: " . $endDate . "<br>";
-                echo "currentDate lala: " . $currentDate . "<br>";
-                if($startDate<=$currentDate)
-                {
-                    echo "compare 1 yes<br>";
-                }
-                else
-                {
-                    echo "compare 1 no<br>";
-                }
-                if($currentDate<=$endDate)
-                {
-                    echo "compare 2 yes<br>";
-                }
-                else
-                {
-                    echo "compare21 no<br>";
-                }
-                echo "test";
+                
                 if($startDate<=$currentDate && $currentDate<=$endDate)
                 {
                     $inOpeningTime = 1;

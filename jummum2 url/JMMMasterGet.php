@@ -25,6 +25,7 @@
     if(sizeof($selectedRow)>0)
     {
         $eachDbName = $selectedRow[0]["DbName"];
+        echo $eachDbName;
         $branchID = $selectedRow[0]["BranchID"];
         $sqlCustomerTable = "select $branchID as BranchID, $eachDbName.CustomerTable.* from $eachDbName.CustomerTable";
         for($i=1; $i<sizeof($selectedRow); $i++)

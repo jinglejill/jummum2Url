@@ -30,7 +30,7 @@
     $inOpeningTime = 0;
     $sql = "select * from $dbNameBranch.Setting where keyName = 'customerOrderStatus'";
     $selectedRow = getSelectedRow($sql);
-    $customerOrderStatus = $selectedRow[0]["CustomerOrderStatus"];
+    $customerOrderStatus = $selectedRow[0]["Value"];
     if($customerOrderStatus == 1)
     {
         $inOpeningTime = 1;

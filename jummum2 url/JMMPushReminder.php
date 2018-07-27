@@ -29,7 +29,7 @@
     for($i=0; $i<sizeof($selectedRow); $i++)
     {
         $deviceToken = $selectedRow[$i]["DeviceToken"];
-        array_push($pushSyncDeviceTokenReceiveOrder,deviceToken);
+        array_push($pushSyncDeviceTokenReceiveOrder,$deviceToken);
     }
     
     
